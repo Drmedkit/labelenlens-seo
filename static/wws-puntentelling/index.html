@@ -265,30 +265,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuButton = document.querySelector('.menu-button');
-            const navMenu = document.querySelector('.nav-menu');
-
-            if (menuButton && navMenu) {
-                menuButton.addEventListener('click', () => {
-                    navMenu.classList.toggle('is-active');
-                    const expanded = navMenu.classList.contains('is-active');
-                    menuButton.setAttribute('aria-expanded', expanded);
-                    // Toggle body scroll lock for mobile menu
-                    document.body.classList.toggle('no-scroll', expanded);
-                });
-
-                // Close menu when a link is clicked (optional, but good UX)
-                navMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        navMenu.classList.remove('is-active');
-                        menuButton.setAttribute('aria-expanded', 'false');
-                        document.body.classList.remove('no-scroll');
-                    });
-                });
-            }
-        });
-    </script>
+    
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

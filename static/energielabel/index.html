@@ -256,14 +256,14 @@
     <header class="header">
         <div class="header-container">
             <a href="/" class="logo">Label & Lens</a>
-            <nav id="nav-menu" class="nav-menu md:flex md:items-center md:space-x-6">
+            <div data-menu id="mobile-menu" class="nav-menu md:flex md:items-center md:space-x-6">
                 <a href="/energielabel" class="hover:text-primary font-medium">Energielabel</a>
                 <a href="/fotografie" class="hover:text-primary font-medium">Fotografie</a>
                 <a href="#prijzen" class="hover:text-primary font-medium">Prijzen</a>
                 <a href="#contact" class="hover:text-primary font-medium">Contact</a>
                 <a href="#contact" class="nav-cta mt-4 md:mt-0">Aanvragen</a>
             </nav>
-            <button id="hamburger" class="hamburger md:hidden">
+            <button data-menu-toggle aria-label="Menu openen" aria-expanded="false" id="menu-toggle" class="hamburger md:hidden" data-menu-toggle aria-label="Menu openen" aria-expanded="false">
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
@@ -404,7 +404,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Vraag Aanbieding Aan</h2>
                 <p class="text-lg text-slate-600 max-w-2xl mx-auto">Vul het formulier in en wij nemen zo snel mogelijk contact met u op om de mogelijkheden te bespreken.</p>
             </div>
-            <form action="#" method="POST" class="bg-white p-8 md:p-10 rounded-xl shadow-lg">
+            <form action="#" method="POST" class="bg-white p-8 md:p-10 rounded-xl shadow-lg" data-contact-form>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                         <label for="name" class="block text-slate-700 text-sm font-semibold mb-2">Naam</label>
@@ -544,26 +544,7 @@
     </footer>
 
     <!-- Vanilla JS for Mobile Menu -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const hamburger = document.getElementById('hamburger');
-            const navMenu = document.getElementById('nav-menu');
-
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                hamburger.classList.toggle('open');
-            });
-
-            // Close menu when a link is clicked (for single-page navigation)
-            navMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                        hamburger.classList.remove('open');
-                    }
-                });
-            });
-        });
-    </script>
+    
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

@@ -117,7 +117,7 @@
             <a href="#contact" class="hidden md:block bg-primary-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors shadow-md">Aanvragen</a>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-green" aria-label="Menu">
+            <button data-menu-toggle aria-label="Menu openen" aria-expanded="false" id="menu-toggle" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-green" aria-label="Menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -125,7 +125,7 @@
         </nav>
 
         <!-- Mobile Menu (Slide-down) -->
-        <div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-md">
+        <div data-menu id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-md">
             <ul class="flex flex-col px-4 py-2 space-y-2 font-medium">
                 <li><a href="/energielabel" class="block py-2 hover:text-primary-green transition-colors">Energielabel</a></li>
                 <li><a href="/fotografie" class="block py-2 hover:text-primary-green transition-colors">Fotografie</a></li>
@@ -406,7 +406,7 @@
                 <!-- Contact Form (Placeholder for future implementation) -->
                 <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
                     <h3 class="text-2xl font-semibold mb-6">Stuur ons een bericht</h3>
-                    <form class="space-y-4">
+                    <form class="space-y-4" data-contact-form>
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700">Naam</label>
                             <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary-green focus:border-primary-green">
@@ -622,54 +622,7 @@
     </footer>
 
     <!-- Vanilla JS for Mobile Menu -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const navLinks = mobileMenu.querySelectorAll('a');
-
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('open');
-                // Optional: Change hamburger icon to close icon
-                const icon = mobileMenuButton.querySelector('svg path');
-                if (mobileMenu.classList.contains('open')) {
-                    icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
-                } else {
-                    icon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
-                }
-            });
-
-            // Close mobile menu when a link is clicked
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('open');
-                    const icon = mobileMenuButton.querySelector('svg path');
-                    icon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
-                });
-            });
-
-            // Optional: Add shadow to nav on scroll
-            const header = document.querySelector('header');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 0) {
-                    header.classList.add('shadow-lg');
-                } else {
-                    header.classList.remove('shadow-lg');
-                }
-            });
-
-            // Optional: Rotate arrow on FAQ details open/close
-            document.querySelectorAll('details').forEach((detail) => {
-                detail.addEventListener('toggle', () => {
-                    const arrow = detail.querySelector('.details-arrow');
-                    if (detail.open) {
-                        arrow.classList.add('rotate-180');
-                    } else {
-                        arrow.classList.remove('rotate-180');
-                    }
-                });
-            });
-        });
-    </script>
+    
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

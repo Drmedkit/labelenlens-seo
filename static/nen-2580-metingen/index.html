@@ -65,8 +65,8 @@
             <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
                 <span class="hamburger-icon"></span>
             </button>
-            <div class="nav-links-wrapper" id="mobile-menu">
-                <ul class="nav-links">
+            <div class="nav-links-wrapper" data-menu data-menu id="mobile-menu">
+                <div class="nav-links" data-menu>
                     <li><a href="/energielabel">Energielabel</a></li>
                     <li><a href="/fotografie">Fotografie</a></li>
                     <li><a href="/energielabel#prijzen">Prijzen</a></li>
@@ -245,39 +245,7 @@
     </footer>
 
     <!-- Minimal Vanilla JS for Mobile Menu -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const navLinks = mobileMenu.querySelector('.nav-links'); // Get nav links inside the mobile menu
-            const ctaButton = mobileMenu.querySelector('.cta-button'); // Get CTA button inside the mobile menu
-
-            if (menuToggle && mobileMenu) {
-                menuToggle.addEventListener('click', function() {
-                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                    mobileMenu.classList.toggle('is-active');
-                    this.setAttribute('aria-expanded', !isExpanded);
-                });
-
-                // Close menu when a link is clicked
-                if (navLinks) {
-                    navLinks.querySelectorAll('a').forEach(link => {
-                        link.addEventListener('click', () => {
-                            mobileMenu.classList.remove('is-active');
-                            menuToggle.setAttribute('aria-expanded', 'false');
-                        });
-                    });
-                }
-                
-                // Close menu when CTA button is clicked
-                if (ctaButton) {
-                    ctaButton.addEventListener('click', () => {
-                        mobileMenu.classList.remove('is-active');
-                        menuToggle.setAttribute('aria-expanded', 'false');
-                    });
-                }
-            }
-        });
-    </script>
+    
+    <script src="/js/main.js" defer></script>
 </body>
 </html>

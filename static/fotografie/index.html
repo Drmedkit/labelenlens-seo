@@ -417,8 +417,8 @@
     <header>
         <nav>
             <a href="/" class="logo">Label & Lens</a>
-            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
-            <div class="nav-links">
+            <button class="hamburger" data-menu-toggle aria-label="Menu openen" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+            <div class="nav-links" data-menu>
                 <a href="/energielabel">Energielabel</a>
                 <a href="/fotografie">Fotografie</a>
                 <a href="/energielabel#prijzen">Prijzen</a>
@@ -573,24 +573,7 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-
-            hamburger.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-            });
-
-            // Close menu when a link is clicked (for mobile)
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('active')) {
-                        navLinks.classList.remove('active');
-                    }
-                });
-            });
-        });
-    </script>
+    
+    <script src="/js/main.js" defer></script>
 </body>
 </html>
