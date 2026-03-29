@@ -3,7 +3,8 @@ import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { PhotoCarousel } from "@/components/PhotoCarousel";
+import { lazy, Suspense } from "react";
+const PhotoCarousel = lazy(() => import("@/components/PhotoCarousel").then(m => ({ default: m.PhotoCarousel })));
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -428,7 +429,7 @@ export default function Fotografie() {
 
             <ScrollReveal delay={200}>
               <div>
-                <PhotoCarousel images={portfolioImages} />
+                <Suspense fallback={<div className="h-64 animate-pulse bg-muted rounded" />}><PhotoCarousel images={portfolioImages} /></Suspense>
               </div>
             </ScrollReveal>
           </div>
