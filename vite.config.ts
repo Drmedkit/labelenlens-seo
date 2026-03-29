@@ -15,20 +15,16 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    minify: "esbuild",
+    cssMinify: true,
+    assetsInlineLimit: 4096,
     rollupOptions: {
       output: {
-        manualChunks(id) {
-          if (id.includes("node_modules")) {
-            if (id.includes("react") || id.includes("wouter")) return "vendor";
-            if (id.includes("@radix-ui")) return "ui";
-          }
+        manualChunks: {
+          vendor: ["react", "react-dom"],
         },
       },
     },
-    minify: "esbuild",
-    // Optimize assets
-    assetsInlineLimit: 4096,
-    cssMinify: true,
   },
   server: {
     fs: {
