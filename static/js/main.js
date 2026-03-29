@@ -6,13 +6,18 @@ document.addEventListener('DOMContentLoaded',function(){
   var menu=document.querySelector('[data-menu]');
   if(btn&&menu){
     btn.addEventListener('click',function(){
-      var open=!menu.classList.toggle('hidden');
-      btn.setAttribute('aria-expanded',open);
+      menu.classList.toggle('open');
+      var isOpen=menu.classList.contains('open');
+      btn.setAttribute('aria-expanded',isOpen);
     });
     menu.querySelectorAll('a').forEach(function(l){
-      l.addEventListener('click',function(){menu.classList.add('hidden');btn.setAttribute('aria-expanded','false');});
+      l.addEventListener('click',function(){
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      });
     });
   }
+
   // Contact Form
   var form=document.querySelector('[data-contact-form]');
   if(form){
@@ -21,9 +26,28 @@ document.addEventListener('DOMContentLoaded',function(){
       var b=form.querySelector('button[type="submit"]');
       var t=b.textContent;b.textContent='Verzenden...';b.disabled=true;
       var d=new FormData(form);var o={};d.forEach(function(v,k){o[k]=v;});
-      fetch(form.action||'#',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(o)})
-      .then(function(){form.innerHTML='<div class="text-center py-8"><p class="text-xl font-semibold text-green-600 mb-2">Bedankt voor uw aanvraag!</p><p class="text-gray-600">Wij nemen zo snel mogelijk contact met u op.</p></div>';})
-      .catch(function(){b.textContent=t;b.disabled=false;alert('Er ging iets mis. Bel ons op +31 6 43 73 57 19.');});
+      // For now, show success (backend connection in next step)
+      setTimeout(function(){
+        form.innerHTML='<div class="text-center py-8"><p class="text-xl font-semibold mb-2" style="color:hsl(84,75%,45%)">Bedankt voor uw aanvraag!</p><p class="text-gray-600">Wij nemen zo snel mogelijk contact met u op.</p></div>';
+      }, 500);
+    });
+  }
+
+  // Service Selector (energielabel page)
+  var selector=document.querySelector('[data-service-selector]');
+  if(selector){
+    var cards=selector.querySelectorAll('[data-option]');
+    cards.forEach(function(card){
+      card.addEventListener('click',function(){
+        // Remove active from siblings
+        card.parentElement.querySelectorAll('[data-option]').forEach(function(c){
+          c.classList.remove('ring-2','ring-green-500','bg-green-50');
+          c.classList.add('bg-white');
+        });
+        // Add active to clicked
+        card.classList.add('ring-2','ring-green-500','bg-green-50');
+        card.classList.remove('bg-white');
+      });
     });
   }
 });

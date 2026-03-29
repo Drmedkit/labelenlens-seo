@@ -95,7 +95,7 @@
         .hero *{position:relative;z-index:1}
     </style>
 </head>
-<body class="antialiased text-[#1a1a1a] bg-[#fcfbf9]">
+<body style="overflow-x:hidden" class="antialiased text-[#1a1a1a] bg-[#fcfbf9]">
 
     <!-- NAVIGATION -->
     <header class="sticky top-0 z-50 bg-white shadow-sm">
@@ -138,11 +138,11 @@
 
     <main>
         <!-- HERO -->
-        <section class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('/images/hero-image.webp');">
+        <section class="relative min-h-[80vh] md:min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('/images/hero-image.webp');">
             <div class="absolute inset-0 bg-black opacity-60"></div>
-            <div class="relative z-10 text-white px-4 py-16 max-w-4xl mx-auto">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Energielabel & Woningpresentatie</h1>
-                <p class="text-lg md:text-xl mb-8">Volledige woonwaardering én high-end presentatie. Eén partner, één oplossing</p>
+            <div class="relative z-10 text-white px-6 sm:px-4 py-16 max-w-4xl mx-auto">
+                <h1 class="text-2xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-4">Energielabel & Woningpresentatie</h1>
+                <p class="text-base sm:text-lg md:text-xl mb-8">Volledige woonwaardering én high-end presentatie. Eén partner, één oplossing</p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#contact" class="bg-primary-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-lg">Energielabel aanvragen</a>
                     <a href="#diensten" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-green transition-colors shadow-lg">Bekijk diensten</a>
