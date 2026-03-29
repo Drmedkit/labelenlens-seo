@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energielabel Aanvragen – Snel & Officieel | Label & Lens</title>
+    <meta name="description" content="Energielabel aanvragen voor woning, verhuur of verkoop? Label & Lens regelt het snel en persoonlijk. EPA-gecertificeerd.">
+    <link rel="canonical" href="https://www.labelenlens.nl/energielabels">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.labelenlens.nl/energielabels">
+    <meta property="og:title" content="Energielabel Aanvragen – Snel & Officieel | Label & Lens">
+    <meta property="og:description" content="Energielabel aanvragen voor woning, verhuur of verkoop? Label & Lens regelt het snel en persoonlijk. EPA-gecertificeerd.">
+    <meta property="og:image" content="https://www.labelenlens.nl/images/hero-image.webp">
+    <meta property="og:site_name" content="Label & Lens">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.labelenlens.nl/energielabels">
+    <meta property="twitter:title" content="Energielabel Aanvragen – Snel & Officieel | Label & Lens">
+    <meta property="twitter:description" content="Energielabel aanvragen voor woning, verhuur of verkoop? Label & Lens regelt het snel en persoonlijk. EPA-gecertificeerd.">
+    <meta property="twitter:image" content="https://www.labelenlens.nl/images/hero-image.webp">
+
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="nl" href="https://www.labelenlens.nl/energielabels">
+    <link rel="alternate" hreflang="x-default" href="https://www.labelenlens.nl/energielabels">
+
+    <!-- Google Fonts Preload (non-blocking pattern) -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" type="image/webp" href="/images/hero-image.webp" fetchpriority="high">
+
+    <!-- Inline Critical CSS -->
+    <style>
+        :root {
+            --primary-color: hsl(84, 75%, 55%); /* #97e655 */
+            --text-color: #1a1a1a;
+            --bg-color: #faf9f7;
+            --card-bg: #fff;
+            --border-radius: 8px;
+        }
+        body {
+            font-family: Inter, system-ui, sans-serif;
+            margin: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            line-height: 1.2;
+            color: var(--text-color);
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: var(--card-bg);
+            box-shadow: 0 1px 3px rgba(0,0,0,.1);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }
+        nav .nav-links {
+            display: none; /* Hidden by default for mobile */
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: var(--card-bg);
+            box-shadow: 0 2px 5px rgba(0,0,0,.05);
+            padding: 1rem 0;
+        }
+        nav .nav-links.active {
+            display: flex;
+        }
+        nav .nav-links a {
+            padding: 0.75rem 1rem;
+            color: var(--text-color);
+            font-weight: 600;
+            display: block;
+            text-align: center;
+        }
+        nav .cta-button {
+            background: var(--primary-color);
+            color: var(--text-color);
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            display: block; /* For mobile menu */
+            text-align: center;
+            margin: 0.5rem 1rem;
+        }
+        .hamburger {
+            display: block; /* Visible by default for mobile */
+            cursor: pointer;
+            font-size: 2rem;
+            background: none;
+            border: none;
+            color: var(--text-color);
+            padding: 0.5rem;
+        }
+        .hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .hero::before {
+            content:'';
+            position:absolute;
+            inset:0;
+            background:rgba(0,0,0,.55);
+        }
+        .hero * {
+            position:relative;
+            z-index:1;
+        }
+        .hero .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+        section {
+            padding: 3rem 0;
+        }
+        section:nth-of-type(even) {
+            background: #f0edea; /* Slightly darker warm background */
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,.05);
+        }
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--text-color);
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: hsl(84, 75%, 65%); /* Lighter green on hover */
+            text-decoration: none;
+        }
+        footer {
+            background: var(--text-color);
+            color: #fff;
+            padding: 3rem 0;
+        }
+        footer a {
+            color: var(--primary-color);
+        }
+        footer .footer-col h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        footer .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer .copyright {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            nav {
+                position: sticky;
+                flex-wrap: nowrap;
+            }
+            nav .nav-links {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                width: auto;
+                box-shadow: none;
+                padding: 0;
+                margin-left: auto; /* Push links to the right */
+            }
+            nav .nav-links a {
+                padding: 0.5rem 1rem;
+                margin-left: 1rem;
+            }
+            nav .cta-button {
+                display: inline-block;
+                margin-left: 1.5rem;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .hamburger {
+                display: none;
+            }
+            .hero {
+                text-align: left;
+            }
+            .hero .container {
+                align-items: flex-start;
+            }
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .grid-2-cols {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .grid-3-cols {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .grid-4-cols {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Energielabel Aanvragen – Snel & Officieel",
+      "description": "Energielabel aanvragen voor woning, verhuur of verkoop? Label & Lens regelt het snel en persoonlijk. EPA-gecertificeerd.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Label & Lens",
+        "url": "https://www.labelenlens.nl"
+      },
+      "serviceType": "Energy Performance Certificate",
+      "areaServed": {
+        "@type": "State",
+        "name": "Amsterdam"
+      },
+      "url": "https://www.labelenlens.nl/energielabels"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">Label & Lens</a>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <div class="nav-links" id="navLinks">
+                <a href="/energielabel">Energielabel</a>
+                <a href="/fotografie">Fotografie</a>
+                <a href="/energielabel#prijzen">Prijzen</a>
+                <a href="#contact">Contact</a>
+                <a href="/aanvragen" class="cta-button">Aanvragen</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('/images/hero-image.webp');">
+            <div class="container">
+                <h1>Heeft jouw woning al een energielabel?</h1>
+                <p>Een energielabel is verplicht bij verkoop of verhuur. Wij regelen het snel, persoonlijk en professioneel.</p>
+            </div>
+        </section>
+
+        <section id="wat-is-energielabel">
+            <div class="container">
+                <h2 class="text-center">Wat is een energielabel?</h2>
+                <p>Een energielabel geeft aan hoe energiezuinig een woning is. Het label loopt van A++++ (zeer energiezuinig) tot G (zeer onzuinig). Sinds 2015 is het verplicht om bij de verkoop, verhuur of oplevering van een woning een geldig energielabel te kunnen overhandigen. Het label geeft potentiële kopers of huurders inzicht in de energiekosten en de duurzaamheid van de woning.</p>
+                <p>Het energielabel wordt opgesteld door een erkend energieadviseur, zoals Label & Lens, die de woning inspecteert en diverse kenmerken zoals isolatie, verwarmingssysteem en ventilatie beoordeelt. Op basis hiervan wordt de energieprestatie berekend en het definitieve label toegekend.</p>
+            </div>
+        </section>
+
+        <section id="wanneer-verplicht">
+            <div class="container">
+                <h2 class="text-center">Wanneer is een energielabel verplicht?</h2>
+                <div class="grid grid-2-cols">
+                    <div class="card">
+                        <h3>Bij verkoop van je woning</h3>
+                        <p>Wanneer je jouw woning wilt verkopen, ben je wettelijk verplicht om een geldig energielabel te overhandigen aan de nieuwe eigenaar. Zonder dit label kan de notaris de overdracht niet afronden.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Bij verhuur van je woning</h3>
+                        <p>Ook bij het verhuren van een woning is een energielabel essentieel. Huurders hebben recht op inzicht in de energiezuinigheid van de woning. Een goed label kan zelfs de aantrekkelijkheid van je woning vergroten.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Bij oplevering van nieuwbouw</h3>
+                        <p>Nieuwbouwwoningen moeten bij oplevering voldoen aan de meest recente energieprestatie-eisen en krijgen direct een energielabel. Dit toont aan dat de woning voldoet aan de duurzaamheidsnormen.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Voorkom een boete</h3>
+                        <p>Het niet kunnen tonen van een geldig energielabel bij verkoop of verhuur kan leiden tot een boete van de Inspectie Leefomgeving en Transport (ILT), die kan oplopen tot €435.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="energielabel-voorbeeld">
+            <div class="container">
+                <h2 class="text-center">Een voorbeeld van een energielabel</h2>
+                <p class="text-center">Bekijk hieronder hoe een officieel energielabel eruitziet en welke informatie het bevat.</p>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <img src="/images/brochure-screenshot.webp" alt="Voorbeeld van een energielabel voor woningen" width="1920" height="1129" loading="lazy" style="max-width: 100%; height: auto; border-radius: var(--border-radius); box-shadow: 0 4px 10px rgba(0,0,0,.1);">
+                </div>
+            </div>
+        </section>
+
+        <section id="hoe-het-werkt">
+            <div class="container">
+                <h2 class="text-center">Hoe werkt het aanvragen van een energielabel?</h2>
+                <div class="grid grid-3-cols">
+                    <div class="card text-center">
+                        <h3>1. Afspraak plannen</h3>
+                        <p>Neem contact met ons op en plan eenvoudig een afspraak in voor de energieopname van jouw woning. Wij zijn flexibel en passen ons aan jouw agenda aan.</p>
+                    </div>
+                    <div class="card text-center">
+                        <h3>2. Energieopname</h3>
+                        <p>Een van onze EPA-adviseurs komt langs voor een grondige inspectie van de woning. We verzamelen alle benodigde gegevens over isolatie, installaties en bouwjaar.</p>
+                    </div>
+                    <div class="card text-center">
+                        <h3>3. Documenten ontvangen</h3>
+                        <p>Na de opname verwerken we de gegevens en ontvang je binnen enkele werkdagen het officiële energielabel, geregistreerd bij de overheid.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="waarom-label-en-lens">
+            <div class="container">
+                <h2 class="text-center">Waarom kiezen voor Label & Lens?</h2>
+                <div class="grid grid-2-cols">
+                    <div class="card">
+                        <h3>Persoonlijke aanpak</h3>
+                        <p>Wij geloven in persoonlijk contact en een service die is afgestemd op jouw specifieke situatie. Geen callcenters, maar direct contact met jouw adviseur.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Snel en efficiënt</h3>
+                        <p>Tijd is kostbaar. Wij zorgen voor een snelle afhandeling van de opname en levering van het energielabel, zodat je snel verder kunt met je plannen.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Eén partner voor alles</h3>
+                        <p>Naast energielabels bieden we ook professionele vastgoedfotografie. Zo heb je één betrouwbare partner voor de presentatie van je woning.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Uitgebreide expertise</h3>
+                        <p>Onze EPA-adviseurs zijn volledig gecertificeerd en hebben uitgebreide kennis van de laatste regelgeving en bouwkundige aspecten.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Praktisch advies</h3>
+                        <p>Naast het label geven we je graag advies over mogelijke energiebesparende maatregelen die de waarde en het comfort van je woning kunnen verhogen.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Flexibele planning</h3>
+                        <p>Wij begrijpen dat je agenda vol kan zijn. Daarom bieden we flexibele afspraaktijden, ook in de avonduren of in het weekend.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container text-center">
+                <h2 class="text-center">Neem contact op</h2>
+                <p>Heb je vragen of wil je direct een energielabel aanvragen? Neem contact met ons op!</p>
+                <p>
+                    <strong>E-mail:</strong> <a href="mailto:Info@labelenlens.nl">Info@labelenlens.nl</a><br>
+                    <strong>Telefoon:</strong> <a href="tel:+31643735719">+31 6 43 73 57 19</a><br>
+                    <strong>WhatsApp:</strong> <a href="https://wa.me/31643735719" target="_blank" rel="noopener noreferrer">Stuur een WhatsApp bericht</a>
+                </p>
+                <p style="margin-top: 2rem;">
+                    <a href="/aanvragen" class="button">Vraag direct een energielabel aan</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container grid grid-4-cols">
+            <div class="footer-col">
+                <h3>Label & Lens</h3>
+                <ul>
+                    <li><a href="/energielabel">Energielabel</a></li>
+                    <li><a href="/fotografie">Vastgoedfotografie</a></li>
+                    <li><a href="/energielabel#prijzen">Prijzen</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Diensten</h3>
+                <ul>
+                    <li><a href="/energielabel">Energielabel aanvragen</a></li>
+                    <li><a href="/fotografie">Professionele fotografie</a></li>
+                    <li><a href="/energielabel">EPA-advies</a></li>
+                    <li><a href="/aanvragen">Direct aanvragen</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:Info@labelenlens.nl">Info@labelenlens.nl</a></li>
+                    <li><a href="tel:+31643735719">+31 6 43 73 57 19</a></li>
+                    <li>KVK: 87532638</li>
+                    <li>Amsterdam, Nederland</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Meer informatie</h3>
+                <ul>
+                    <li><a href="/privacybeleid">Privacybeleid</a></li>
+                    <li><a href="/algemene-voorwaarden">Algemene voorwaarden</a></li>
+                    <li><a href="/veelgestelde-vragen">Veelgestelde vragen</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright container">
+            <p>&copy; 2026 Label & Lens. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- Minimal Vanilla JS for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when a link is clicked (for single-page navigation or general UX)
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energielabel Aanvragen Amsterdam | Label & Lens</title>
+    <meta name="description" content="Energielabel aanvragen in Amsterdam? EPA-gecertificeerd, binnen 5 werkdagen. Alle stadsdelen: Centrum, West, Noord, Oost, Zuid.">
+    <link rel="canonical" href="https://www.labelenlens.nl/energielabel-aanvragen-amsterdam/">
+
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" type="image/webp" href="/images/hero-image.webp" fetchpriority="high">
+
+    <!-- Preload and load Inter font (non-blocking) -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+
+    <!-- Critical CSS -->
+    <style>
+        :root {
+            --primary-color: hsl(84, 75%, 55%);
+            --background-color: #faf9f7;
+            --text-color: #1a1a1a;
+            --card-background: #fff;
+            --border-radius: 8px;
+        }
+        body {
+            font-family: Inter, system-ui, sans-serif;
+            margin: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: var(--card-background);
+            box-shadow: 0 1px 3px rgba(0,0,0,.1);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: none; /* Hidden by default on mobile */
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: var(--card-background);
+            box-shadow: 0 2px 5px rgba(0,0,0,.1);
+            padding: 1rem 0;
+        }
+        .nav-menu.is-active {
+            display: flex;
+        }
+        .nav-menu a {
+            padding: 0.75rem 1.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+        }
+        .nav-menu a:hover {
+            background: rgba(0,0,0,0.05);
+        }
+        .nav-toggle {
+            display: block; /* Visible on mobile */
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .nav-cta {
+            display: none; /* Hidden on mobile, shown in menu or larger screens */
+        }
+        .hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            background-image: url('/images/hero-image.webp'); /* Set hero image */
+            text-align: center;
+            color: #fff;
+            padding: 2rem 1rem;
+        }
+        .hero::before {
+            content:'';
+            position:absolute;
+            inset:0;
+            background:rgba(0,0,0,.55);
+        }
+        .hero * {
+            position:relative;
+            z-index:1;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            max-width: 800px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .card {
+            background: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--text-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: hsl(84, 75%, 45%);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 768px) {
+            .nav-menu {
+                display: flex !important; /* Always show on larger screens */
+                flex-direction: row;
+                position: static;
+                width: auto;
+                box-shadow: none;
+                padding: 0;
+            }
+            .nav-menu a {
+                padding: 0.5rem 1rem;
+            }
+            .nav-toggle {
+                display: none; /* Hide toggle button on larger screens */
+            }
+            .nav-cta {
+                display: block; /* Show CTA button on larger screens */
+                margin-left: 1.5rem;
+            }
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .footer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.labelenlens.nl/energielabel-aanvragen-amsterdam/">
+    <meta property="og:title" content="Energielabel Aanvragen Amsterdam | Label & Lens">
+    <meta property="og:description" content="Energielabel aanvragen in Amsterdam? EPA-gecertificeerd, binnen 5 werkdagen. Alle stadsdelen: Centrum, West, Noord, Oost, Zuid.">
+    <meta property="og:image" content="https://www.labelenlens.nl/images/og-image.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.labelenlens.nl/energielabel-aanvragen-amsterdam/">
+    <meta property="twitter:title" content="Energielabel Aanvragen Amsterdam | Label & Lens">
+    <meta property="twitter:description" content="Energielabel aanvragen in Amsterdam? EPA-gecertificeerd, binnen 5 werkdagen. Alle stadsdelen: Centrum, West, Noord, Oost, Zuid.">
+    <meta property="twitter:image" content="https://www.labelenlens.nl/images/twitter-image.webp">
+
+    <!-- Hreflang -->
+    <link rel="alternate" href="https://www.labelenlens.nl/energielabel-aanvragen-amsterdam/" hreflang="nl-NL">
+    <link rel="alternate" href="https://www.labelenlens.nl/energielabel-aanvragen-amsterdam/" hreflang="x-default">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Energielabel Aanvragen Amsterdam",
+      "description": "Energielabel aanvragen in Amsterdam? EPA-gecertificeerd, binnen 5 werkdagen. Alle stadsdelen: Centrum, West, Noord, Oost, Zuid.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Label & Lens",
+        "url": "https://www.labelenlens.nl"
+      },
+      "serviceArea": {
+        "@type": "AdministrativeArea",
+        "name": "Amsterdam"
+      },
+      "url": "https://www.labelenlens.nl/energielabel-aanvragen-amsterdam/",
+      "image": "https://www.labelenlens.nl/images/energielabel-amsterdam.webp",
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.labelenlens.nl/contact",
+          "inLanguage": "nl-NL",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "Service",
+          "name": "Energielabel Aanvragen Amsterdam"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="nav-logo">Label & Lens</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <div class="nav-menu">
+                <a href="/energielabel">Energielabel</a>
+                <a href="/fotografie">Fotografie</a>
+                <a href="/energielabel#prijzen">Prijzen</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="button nav-cta">Aanvragen</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Energielabel laten opmaken in Amsterdam</h1>
+            </div>
+        </section>
+
+        <section id="amsterdam-focus">
+            <div class="container">
+                <h2>Gespecialiseerd in Amsterdamse woningen</h2>
+                <p>Wij zijn gespecialiseerd in woningen in Amsterdam en omgeving. Met diepgaande kennis van de lokale woningmarkt en regelgeving zorgen wij voor een nauwkeurig en snel energielabel voor uw pand. Of u nu een appartement in de binnenstad heeft of een eengezinswoning in een van de buitenwijken, Label & Lens is uw betrouwbare partner.</p>
+                <img src="/images/amsterdam-canal.webp" alt="Amsterdamse gracht met huizen" width="800" height="533" loading="lazy" style="max-width:100%; height:auto; display:block; margin:2rem auto; border-radius:var(--border-radius);">
+            </div>
+        </section>
+
+        <section id="stadsdelen">
+            <div class="container">
+                <h2>Wij zijn actief in alle Amsterdamse stadsdelen</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Amsterdam-Centrum</h3>
+                        <p>Van de grachtengordel tot de Jordaan, wij kennen de specifieke kenmerken van woningen in het centrum.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Amsterdam-West</h3>
+                        <p>Van Oud-West tot de Houthavens, wij bedienen alle wijken in Amsterdam-West.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Amsterdam-Noord</h3>
+                        <p>Van de NDSM-werf tot Landelijk Noord, ook hier zijn wij snel ter plaatse.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Amsterdam-Oost</h3>
+                        <p>Van de Indische Buurt tot IJburg, wij leveren energielabels in heel Oost.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Amsterdam-Zuid</h3>
+                        <p>Van de Pijp tot Oud-Zuid, wij zijn bekend met de woningen in dit stadsdeel.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Amsterdam-Nieuw-West</h3>
+                        <p>Van Slotervaart tot Geuzenveld, wij verzorgen energielabels in Nieuw-West.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Amsterdam-Zuidoost</h3>
+                        <p>Van de Bijlmer tot Gaasperdam, ook in Zuidoost staan wij voor u klaar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diensten-amsterdam">
+            <div class="container">
+                <h2>Onze diensten in Amsterdam</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="/images/energielabel-icon.webp" alt="Energielabel icoon" width="64" height="64" loading="lazy" style="margin-bottom:1rem;">
+                        <h3>Energielabel</h3>
+                        <p>Snel en nauwkeurig energielabel voor uw woning of bedrijfspand, conform de laatste wetgeving.</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/wws-icon.webp" alt="WWS Puntentelling icoon" width="64" height="64" loading="lazy" style="margin-bottom:1rem;">
+                        <h3>WWS Puntentelling</h3>
+                        <p>Bereken de maximale huurprijs van uw woning met een officiële WWS puntentelling.</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/nen-icon.webp" alt="NEN 2580 Meting icoon" width="64" height="64" loading="lazy" style="margin-bottom:1rem;">
+                        <h3>NEN 2580 Meting</h3>
+                        <p>Officiële meetrapporten voor de gebruiksoppervlakte en inhoud van uw pand, essentieel voor verkoop of verhuur.</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/fotografie-icon.webp" alt="Vastgoedfotografie icoon" width="64" height="64" loading="lazy" style="margin-bottom:1rem;">
+                        <h3>Vastgoedfotografie</h3>
+                        <p>Professionele fotografie om uw woning optimaal te presenteren op Funda en andere platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hoe-het-werkt">
+            <div class="container">
+                <h2>Hoe werkt het aanvragen van een energielabel?</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>1. Aanvraag & Afspraak</h3>
+                        <p>Vraag eenvoudig online een offerte aan of neem contact op. We plannen een afspraak voor de opname in die past bij uw agenda.</p>
+                        <img src="/images/step1-aanvraag.webp" alt="Stap 1: Aanvraag en afspraak" width="300" height="200" loading="lazy" style="max-width:100%; height:auto; margin-top:1rem; border-radius:var(--border-radius);">
+                    </div>
+                    <div class="card">
+                        <h3>2. Opname ter plaatse</h3>
+                        <p>Een van onze EPA-adviseurs komt langs om alle relevante kenmerken van uw woning te inventariseren. Dit duurt gemiddeld 1-2 uur.</p>
+                        <img src="/images/step2-opname.webp" alt="Stap 2: Opname ter plaatse" width="300" height="200" loading="lazy" style="max-width:100%; height:auto; margin-top:1rem; border-radius:var(--border-radius);">
+                    </div>
+                    <div class="card">
+                        <h3>3. Ontvang uw energielabel</h3>
+                        <p>Binnen 5 werkdagen na de opname ontvangt u het officiële energielabel, geregistreerd bij de overheid.</p>
+                        <img src="/images/step3-energielabel.webp" alt="Stap 3: Ontvang uw energielabel" width="300" height="200" loading="lazy" style="max-width:100%; height:auto; margin-top:1rem; border-radius:var(--border-radius);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container" style="text-align:center;">
+                <h2>Neem contact op voor een energielabel in Amsterdam</h2>
+                <p>Wilt u direct een energielabel aanvragen of heeft u vragen over onze diensten in Amsterdam? Neem dan contact met ons op. Wij helpen u graag verder!</p>
+                <a href="/contact" class="button">Vraag direct een offerte aan</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3>Label & Lens</h3>
+                <p>Uw partner voor energielabels en vastgoedfotografie.</p>
+                <img src="/images/logo-footer.webp" alt="Label & Lens logo" width="150" height="50" loading="lazy" style="margin-top:1rem;">
+            </div>
+            <div>
+                <h3>Navigatie</h3>
+                <ul>
+                    <li><a href="/energielabel">Energielabel</a></li>
+                    <li><a href="/fotografie">Fotografie</a></li>
+                    <li><a href="/energielabel#prijzen">Prijzen</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contactgegevens</h3>
+                <p>Email: <a href="mailto:Info@labelenlens.nl">Info@labelenlens.nl</a></p>
+                <p>Telefoon: <a href="tel:+31643735719">+31 6 43 73 57 19</a></p>
+                <p>KVK: 87532638</p>
+            </div>
+            <div>
+                <h3>Locatie</h3>
+                <p>Wij werken door heel Nederland, met een focus op de Randstad en specifiek Amsterdam.</p>
+            </div>
+        </div>
+        <div class="container" style="text-align:center; margin-top:2rem; border-top:1px solid rgba(255,255,255,0.1); padding-top:1rem;">
+            <p>&copy; 2026 Label & Lens. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('is-active');
+                });
+
+                // Close menu when a link is clicked (for single-page navigation or general UX)
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navMenu.classList.contains('is-active')) {
+                            navMenu.classList.remove('is-active');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

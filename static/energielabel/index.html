@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energielabel Aanvragen Amsterdam – Binnen 5 Werkdagen | Label & Lens</title>
+    <meta name="description" content="Officieel energielabel aanvragen voor uw woning in Amsterdam. EPA-gecertificeerd volgens BRL9500, inclusief adviesrapport. Binnen 5 werkdagen.">
+    <link rel="canonical" href="https://www.labelenlens.nl/energielabel">
+
+    <!-- Preload Inter font -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Non-blocking Google Fonts (Inter) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Favicon (Placeholder) -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.labelenlens.nl/energielabel">
+    <meta property="og:title" content="Energielabel Aanvragen Amsterdam – Binnen 5 Werkdagen | Label & Lens">
+    <meta property="og:description" content="Officieel energielabel aanvragen voor uw woning in Amsterdam. EPA-gecertificeerd volgens BRL9500, inclusief adviesrapport. Binnen 5 werkdagen.">
+    <meta property="og:image" content="https://www.labelenlens.nl/images/og-image-energielabel.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.labelenlens.nl/energielabel">
+    <meta property="twitter:title" content="Energielabel Aanvragen Amsterdam – Binnen 5 Werkdagen | Label & Lens">
+    <meta property="twitter:description" content="Officieel energielabel aanvragen voor uw woning in Amsterdam. EPA-gecertificeerd volgens BRL9500, inclusief adviesrapport. Binnen 5 werkdagen.">
+    <meta property="twitter:image" content="https://www.labelenlens.nl/images/twitter-image-energielabel.jpg">
+
+    <!-- JSON-LD Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Energielabel Aanvragen",
+      "provider": {
+        "@type": "Organization",
+        "name": "Label & Lens",
+        "url": "https://www.labelenlens.nl",
+        "logo": "https://www.labelenlens.nl/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+31-6-12345678",
+          "contactType": "customer service"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Amsterdam"
+      },
+      "description": "Officieel energielabel aanvragen voor uw woning in Amsterdam, inclusief adviesrapport. EPA-gecertificeerd volgens BRL9500. Levering binnen 5 werkdagen.",
+      "url": "https://www.labelenlens.nl/energielabel"
+    }
+    </script>
+
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="/images/hero-image.webp">
+
+    <!-- Inline Critical CSS -->
+    <style>
+        /* Custom Properties for Colors */
+        :root {
+            --color-primary: hsl(84, 75%, 55%); /* #a8e657 */
+            --color-off-white: hsl(30, 25%, 98%); /* #fcfaf7 */
+            --color-text-dark: hsl(210, 20%, 20%); /* A dark slate */
+        }
+
+        /* Basic reset/base styles */
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-off-white);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            margin: 0;
+        }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: var(--color-off-white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            max-width: 1280px; /* Equivalent to max-w-7xl */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text-dark);
+        }
+        .nav-menu {
+            display: none; /* Hidden by default on mobile */
+        }
+        .nav-menu.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: var(--color-off-white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 1rem;
+        }
+        .nav-menu a {
+            padding: 0.5rem 1rem;
+            display: block;
+            color: var(--color-text-dark);
+            font-weight: 500;
+        }
+        .nav-menu a:hover {
+            color: var(--color-primary);
+        }
+        .nav-cta {
+            background-color: var(--color-primary);
+            color: var(--color-text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .nav-cta:hover {
+            background-color: hsl(84, 75%, 45%); /* Slightly darker green */
+        }
+        .hamburger {
+            display: block; /* Visible on mobile */
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .hamburger-line {
+            width: 25px;
+            height: 3px;
+            background-color: var(--color-text-dark);
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        .hamburger.open .hamburger-line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.open .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.open .hamburger-line:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-image: url('/images/hero-image.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 1rem; /* Adjust for mobile */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh; /* Example height */
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero h1 {
+            font-size: 2.5rem; /* Mobile H1 */
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.125rem; /* Mobile subtitle */
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .hero .cta-button {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-text-dark);
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: background-color 0.3s ease;
+        }
+        .hero .cta-button:hover {
+            background-color: hsl(84, 75%, 45%);
+        }
+
+        /* Media queries for larger screens (desktop) */
+        @media (min-width: 768px) { /* md breakpoint */
+            .nav-menu {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                box-shadow: none;
+                padding: 0;
+                align-items: center;
+            }
+            .nav-menu a {
+                padding: 0.5rem 1rem;
+            }
+            .hamburger {
+                display: none;
+            }
+            .hero {
+                padding: 8rem 2rem;
+            }
+            .hero h1 {
+                font-size: 4rem; /* Desktop H1 */
+            }
+            .hero p {
+                font-size: 1.5rem; /* Desktop subtitle */
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-off-white text-slate-800 antialiased">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">Label & Lens</a>
+            <nav id="nav-menu" class="nav-menu md:flex md:items-center md:space-x-6">
+                <a href="/energielabel" class="hover:text-primary font-medium">Energielabel</a>
+                <a href="/fotografie" class="hover:text-primary font-medium">Fotografie</a>
+                <a href="#prijzen" class="hover:text-primary font-medium">Prijzen</a>
+                <a href="#contact" class="hover:text-primary font-medium">Contact</a>
+                <a href="#contact" class="nav-cta mt-4 md:mt-0">Aanvragen</a>
+            </nav>
+            <button id="hamburger" class="hamburger md:hidden">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight mb-4">Energielabel Aanvragen Amsterdam</h1>
+                <p class="text-white text-lg md:text-xl mb-8 opacity-90">Officieel energielabel, binnen 5 werkdagen. EPA-gecertificeerd volgens BRL9500.</p>
+                <a href="#aanvragen" class="cta-button">Direct aanvragen</a>
+            </div>
+        </section>
+
+        <!-- Service Selector Section -->
+        <section id="aanvragen" class="py-16 md:py-24 px-4 max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Kies uw woningtype en dienst</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Selecteer eerst het woningtype, daarna de gewenste dienst. Wij helpen u graag verder.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Step 1: Woningtype -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-center lg:text-left">Stap 1: Woningtype</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <a href="#contact" class="card border-2 border-transparent hover:border-primary">
+                            <img src="/images/house-icon.svg" alt="Koopwoning icoon" width="64" height="64" loading="lazy" class="mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Koopwoning</h3>
+                            <p class="text-slate-600">Voor eigenaren die hun woning willen verkopen of verhuren.</p>
+                        </a>
+                        <a href="#contact" class="card border-2 border-transparent hover:border-primary">
+                            <img src="/images/apartment-icon.svg" alt="Huurwoning icoon" width="64" height="64" loading="lazy" class="mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Huurwoning</h3>
+                            <p class="text-slate-600">Voor verhuurders die een energielabel of puntentelling nodig hebben.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Step 2: Dienst -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-center lg:text-left">Stap 2: Gewenste Dienst</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Koop options -->
+                        <a href="#contact" class="card border-2 border-transparent hover:border-primary">
+                            <img src="/images/energielabel-icon.svg" alt="Energielabel icoon" width="64" height="64" loading="lazy" class="mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Energielabel</h3>
+                            <p class="text-slate-600 text-sm">Verplicht bij verkoop of verhuur.</p>
+                        </a>
+                        <a href="#contact" class="card border-2 border-transparent hover:border-primary">
+                            <img src="/images/camera-icon.svg" alt="Fotografie icoon" width="64" height="64" loading="lazy" class="mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Fotografie</h3>
+                            <p class="text-slate-600 text-sm">Professionele woningfotografie.</p>
+                        </a>
+                        <a href="#contact" class="card border-2 border-transparent hover:border-primary col-span-full md:col-span-1 lg:col-span-1">
+                            <img src="/images/label-camera-icon.svg" alt="Energielabel & Fotografie icoon" width="64" height="64" loading="lazy" class="mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Energielabel & Fotografie</h3>
+                            <p class="text-slate-600 text-sm">Voordelige combinatie.</p>
+                        </a>
+
+                        <!-- Huur options (visually distinct or grouped if needed, but for now just listed) -->
+                        <a href="#contact" class="card border-2 border-transparent hover:border-primary">
+                            <img src="/images/energielabel-icon.svg" alt="Energielabel icoon" width="64" height="64" loading="lazy" class="mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Energielabel</h3>
+                            <p class="text-slate-600 text-sm">Verplicht bij verhuur.</p>
+                        </a>
+                        <a href="#contact" class="card border-2 border-transparent hover:border-primary">
+                            <img src="/images/puntentelling-icon.svg" alt="Puntentelling WWS icoon" width="64" height="64" loading="lazy" class="mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Puntentelling (WWS)</h3>
+                            <p class="text-slate-600 text-sm">Bepaling maximale huurprijs.</p>
+                        </a>
+                        <a href="#contact" class="card border-2 border-transparent hover:border-primary">
+                            <img src="/images/advies-icon.svg" alt="Adviesrapport icoon" width="64" height="64" loading="lazy" class="mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Adviesrapport</h3>
+                            <p class="text-slate-600 text-sm">Inzicht in verduurzamingsopties.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fotografie Pakketten Section -->
+        <section id="prijzen" class="bg-gray-50 py-16 md:py-24 px-4">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Fotografie Pakketten</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Basic Package -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-2xl font-bold text-primary mb-4">Basic</h3>
+                        <p class="text-5xl font-extrabold mb-6">€149</p>
+                        <ul class="text-slate-700 space-y-3 mb-8 text-left w-full max-w-xs">
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Tot 10 foto's</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Basisbewerkingen</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Levering binnen 2 dagen</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary w-full">Kies Basic</a>
+                    </div>
+
+                    <!-- Standaard Package -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center border-2 border-primary transform scale-105 relative z-10">
+                        <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-slate-800 text-xs font-bold px-3 py-1 rounded-full shadow-md">Meest gekozen</span>
+                        <h3 class="text-2xl font-bold text-primary mb-4">Standaard</h3>
+                        <p class="text-5xl font-extrabold mb-6">€249</p>
+                        <ul class="text-slate-700 space-y-3 mb-8 text-left w-full max-w-xs">
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Tot 20 foto's</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Geavanceerde bewerking</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Drone optie</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Plattegrond</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Levering binnen 24 uur</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary w-full">Kies Standaard</a>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-2xl font-bold text-primary mb-4">Premium</h3>
+                        <p class="text-5xl font-extrabold mb-6">€399</p>
+                        <ul class="text-slate-700 space-y-3 mb-8 text-left w-full max-w-xs">
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Onbeperkt foto's</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> 360° tour</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Video walkthrough</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Drone</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Styling advies</li>
+                            <li class="flex items-center"><img src="/images/check-icon.svg" alt="Checkmark" width="20" height="20" loading="lazy" class="mr-2"> Levering binnen 24 uur</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary w-full">Kies Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-16 md:py-24 px-4 max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Vraag Aanbieding Aan</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Vul het formulier in en wij nemen zo snel mogelijk contact met u op om de mogelijkheden te bespreken.</p>
+            </div>
+            <form action="#" method="POST" class="bg-white p-8 md:p-10 rounded-xl shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-slate-700 text-sm font-semibold mb-2">Naam</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-slate-700 text-sm font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-slate-700 text-sm font-semibold mb-2">Telefoon</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="postcode" class="block text-slate-700 text-sm font-semibold mb-2">Postcode</label>
+                        <input type="text" id="postcode" name="postcode" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="housenumber" class="block text-slate-700 text-sm font-semibold mb-2">Huisnummer</label>
+                        <input type="text" id="housenumber" name="housenumber" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="comments" class="block text-slate-700 text-sm font-semibold mb-2">Aanvullende opmerkingen</label>
+                    <textarea id="comments" name="comments" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-primary w-full md:w-auto">Verstuur Aanvraag</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="bg-gray-50 py-16 md:py-24 px-4">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Wat klanten zeggen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-left">
+                        <div class="flex items-center mb-4">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy">
+                        </div>
+                        <p class="text-slate-700 mb-4 italic">"Snel en vakkundig mijn energielabel geregeld. Duidelijke communicatie en een helder adviesrapport. Zeer tevreden!"</p>
+                        <p class="font-semibold text-slate-800">- Mark V.</p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-left">
+                        <div class="flex items-center mb-4">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy">
+                        </div>
+                        <p class="text-slate-700 mb-4 italic">"De fotografie voor mijn woning was prachtig! De foto's waren van hoge kwaliteit en hebben zeker bijgedragen aan de snelle verkoop."</p>
+                        <p class="font-semibold text-slate-800">- Sophie D.</p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-left">
+                        <div class="flex items-center mb-4">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy">
+                        </div>
+                        <p class="text-slate-700 mb-4 italic">"Professioneel en efficiënt. Het energielabel was binnen de beloofde termijn geregeld en de prijs was zeer concurrerend."</p>
+                        <p class="font-semibold text-slate-800">- Pieter K.</p>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-left">
+                        <div class="flex items-center mb-4">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy" class="mr-1">
+                            <img src="/images/star-icon.svg" alt="Star rating" width="20" height="20" loading="lazy">
+                        </div>
+                        <p class="text-slate-700 mb-4 italic">"De combinatie van energielabel en fotografie was ideaal. Eén afspraak, alles geregeld. Super service!"</p>
+                        <p class="font-semibold text-slate-800">- Laura S.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12 md:py-16 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Logo & Description -->
+            <div>
+                <a href="/" class="text-2xl font-bold text-primary mb-4 block">Label & Lens</a>
+                <p class="text-slate-300 text-sm">Uw partner voor officiële energielabels en professionele woningfotografie in Amsterdam en omstreken.</p>
+            </div>
+
+            <!-- Nav Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Navigatie</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/energielabel" class="hover:text-primary transition-colors">Energielabel</a></li>
+                    <li><a href="/fotografie" class="hover:text-primary transition-colors">Fotografie</a></li>
+                    <li><a href="#prijzen" class="hover:text-primary transition-colors">Prijzen</a></li>
+                    <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="mailto:info@labelenlens.nl" class="hover:text-primary transition-colors">info@labelenlens.nl</a></li>
+                    <li><a href="tel:+31612345678" class="hover:text-primary transition-colors">+31 6 12345678</a></li>
+                    <li>Amsterdam, Nederland</li>
+                </ul>
+            </div>
+
+            <!-- Social Media (Placeholder) -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Volg ons</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-slate-300 hover:text-primary transition-colors" aria-label="LinkedIn">
+                        <img src="/images/linkedin-icon.svg" alt="LinkedIn" width="24" height="24" loading="lazy">
+                    </a>
+                    <a href="#" class="text-slate-300 hover:text-primary transition-colors" aria-label="Instagram">
+                        <img src="/images/instagram-icon.svg" alt="Instagram" width="24" height="24" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-slate-700 mt-10 pt-8 text-center text-sm text-slate-400">
+            &copy; 2023 Label & Lens. Alle rechten voorbehouden.
+        </div>
+    </footer>
+
+    <!-- Vanilla JS for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('open');
+            });
+
+            // Close menu when a link is clicked (for single-page navigation)
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        hamburger.classList.remove('open');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

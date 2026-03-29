@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energielabel & Vastgoedfotografie Amsterdam | Label & Lens</title>
+    <meta name="description" content="Professionele energielabels én vastgoedfotografie in Amsterdam. EPA-gecertificeerd, binnen 5 werkdagen geleverd. Ook puntentelling & adviesrapport.">
+    <link rel="canonical" href="https://www.labelenlens.nl/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.labelenlens.nl/">
+    <meta property="og:title" content="Energielabel & Vastgoedfotografie Amsterdam | Label & Lens">
+    <meta property="og:description" content="Professionele energielabels én vastgoedfotografie in Amsterdam. EPA-gecertificeerd, binnen 5 werkdagen geleverd. Ook puntentelling & adviesrapport.">
+    <meta property="og:image" content="https://www.labelenlens.nl/images/hero-image.webp"> <!-- Replace with actual OG image if different -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.labelenlens.nl/">
+    <meta property="twitter:title" content="Energielabel & Vastgoedfotografie Amsterdam | Label & Lens">
+    <meta property="twitter:description" content="Professionele energielabels én vastgoedfotografie in Amsterdam. EPA-gecertificeerd, binnen 5 werkdagen geleverd. Ook puntentelling & adviesrapport.">
+    <meta property="twitter:image" content="https://www.labelenlens.nl/images/hero-image.webp"> <!-- Replace with actual Twitter image if different -->
+
+    <!-- Hreflang -->
+    <link rel="alternate" href="https://www.labelenlens.nl/" hreflang="nl-NL">
+    <link rel="alternate" href="https://www.labelenlens.nl/" hreflang="x-default">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Label & Lens",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Amsterdam",
+        "addressCountry": "NL"
+      },
+      "telephone": "+31643735719",
+      "email": "Info@labelenlens.nl",
+      "url": "https://www.labelenlens.nl/",
+      "openingHours": [
+        "Mo-Fr 08:00-18:00",
+        "Sa-Su by appointment"
+      ],
+      "image": "https://www.labelenlens.nl/images/logo-image.webp",
+      "priceRange": "€€"
+    }
+    </script>
+
+    <style>
+        /* Custom colors for Tailwind, assuming these are defined in tailwind.config.js */
+        /* For direct use in HTML, we'll use hex values derived from HSL */
+        /* Primary green: hsl(84, 75%, 55%) -> #7cc62e */
+        /* Background: warm off-white hsl(40, 15%, 98%) -> #fcfbf9 */
+        /* Text: near-black hsl(0, 0%, 10%) -> #1a1a1a */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: hsl(40, 15%, 98%); /* Warm off-white */
+            color: hsl(0, 0%, 10%); /* Near-black */
+        }
+        .text-primary-green { color: hsl(84, 75%, 55%); }
+        .bg-primary-green { background-color: hsl(84, 75%, 55%); }
+        .border-primary-green { border-color: hsl(84, 75%, 55%); }
+        .hover\:bg-primary-green:hover { background-color: hsl(84, 75%, 55%); }
+        .hover\:text-primary-green:hover { color: hsl(84, 75%, 55%); }
+        .focus\:ring-primary-green:focus { --tw-ring-color: hsl(84, 75%, 55%); }
+
+        /* Custom styles for mobile menu transition */
+        .mobile-menu {
+            transition: max-height 0.3s ease-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .mobile-menu.open {
+            max-height: 500px; /* Adjust based on content height */
+        }
+    </style>
+    <link rel="preload" as="image" type="image/webp" href="/images/hero-image.webp" fetchpriority="high">
+
+    <style>
+        body{font-family:Inter,system-ui,sans-serif;margin:0;background:#faf9f7;color:#1a1a1a}
+        nav{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+        .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background-size:cover;background-position:center;position:relative}
+        .hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.55)}
+        .hero *{position:relative;z-index:1}
+    </style>
+</head>
+<body class="antialiased text-[#1a1a1a] bg-[#fcfbf9]">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="/" class="flex items-center space-x-2">
+                <img src="/images/logo-image.webp" alt="Label & Lens Logo" width="40" height="40" class="w-10 h-10">
+                <span class="text-xl font-bold text-[#1a1a1a]">Label & Lens</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="/energielabel" class="hover:text-primary-green transition-colors">Energielabel</a></li>
+                <li><a href="/fotografie" class="hover:text-primary-green transition-colors">Fotografie</a></li>
+                <li><a href="#prijzen" class="hover:text-primary-green transition-colors">Prijzen</a></li>
+                <li><a href="#contact" class="hover:text-primary-green transition-colors">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button (Desktop) -->
+            <a href="#contact" class="hidden md:block bg-primary-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors shadow-md">Aanvragen</a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-green" aria-label="Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu (Slide-down) -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-md">
+            <ul class="flex flex-col px-4 py-2 space-y-2 font-medium">
+                <li><a href="/energielabel" class="block py-2 hover:text-primary-green transition-colors">Energielabel</a></li>
+                <li><a href="/fotografie" class="block py-2 hover:text-primary-green transition-colors">Fotografie</a></li>
+                <li><a href="#prijzen" class="block py-2 hover:text-primary-green transition-colors">Prijzen</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-primary-green transition-colors">Contact</a></li>
+                <li><a href="#contact" class="block bg-primary-green text-white px-4 py-2 rounded-lg font-semibold text-center hover:bg-green-600 transition-colors mt-2">Aanvragen</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('/images/hero-image.webp');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 text-white px-4 py-16 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Energielabel & Woningpresentatie</h1>
+                <p class="text-lg md:text-xl mb-8">Volledige woonwaardering én high-end presentatie. Eén partner, één oplossing</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-primary-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-lg">Energielabel aanvragen</a>
+                    <a href="#diensten" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-green transition-colors shadow-lg">Bekijk diensten</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICE SELECTOR -->
+        <section id="diensten" class="py-16 md:py-24 container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Stap 1: Kies uw dienst</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Card 1: Energielabel -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center flex flex-col items-center">
+                    <div class="text-primary-green mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Energielabel</h3>
+                    <p class="text-gray-600">Officieel energielabel voor uw woning</p>
+                </div>
+                <!-- Card 2: Fotografie -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center flex flex-col items-center">
+                    <div class="text-primary-green mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fotografie</h3>
+                    <p class="text-gray-600">Professionele woningfotografie</p>
+                </div>
+                <!-- Card 3: Energielabel & Woningpresentatie -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center flex flex-col items-center">
+                    <div class="text-primary-green mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Energielabel & Woningpresentatie</h3>
+                    <p class="text-gray-600">Compleet pakket met voordeel</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ONZE DIENSTEN -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Onze diensten</h2>
+                <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Alles onder één dak, van energielabel tot woningpresentatie</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Dienst 1 -->
+                    <a href="/energielabels" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-semibold mb-2">Energielabels</h3>
+                        <p class="text-gray-600">Energielabels voor woningen en utiliteitsgebouwen</p>
+                    </a>
+                    <!-- Dienst 2 -->
+                    <a href="/wws-puntentelling/" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-semibold mb-2">WWS puntentelling</h3>
+                        <p class="text-gray-600">Inzicht in huurpunten en maximale huurprijs</p>
+                    </a>
+                    <!-- Dienst 3 -->
+                    <a href="/nen-2580-metingen/" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-semibold mb-2">NEN 2580 meting</h3>
+                        <p class="text-gray-600">Professionele inmeting volgens de NEN 2580 norm</p>
+                    </a>
+                    <!-- Dienst 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2">Adviesrapporten</h3>
+                        <p class="text-gray-600">Gericht advies op basis van jouw situatie en wensen</p>
+                    </div>
+                    <!-- Dienst 5 -->
+                    <a href="/fotografie" class="block bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                        <h3 class="text-xl font-semibold mb-2">Woningfotografie</h3>
+                        <p class="text-gray-600">Fotografie, video en 360°-beelden</p>
+                    </a>
+                    <!-- Dienst 6 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2">Woningpresentatie</h3>
+                        <p class="text-gray-600">Ondersteuning bij styling en online presentatie</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOE HET WERKT -->
+        <section class="py-16 md:py-24 container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Hoe het werkt</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">In drie eenvoudige stappen naar uw energielabel</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary-green text-white rounded-full text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Afspraak inplannen</h3>
+                    <p class="text-gray-600">U plant met ons een afspraak in</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary-green text-white rounded-full text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Opname ter plaatse</h3>
+                    <p class="text-gray-600">Wij komen langs voor de opname</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary-green text-white rounded-full text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Documenten ontvangen</h3>
+                    <p class="text-gray-600">U ontvangt uw documenten</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- OVER LABEL & LENS -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Over Label & Lens</h2>
+                <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                    <p>Label & Lens is gespecialiseerd in energielabels, woningopnames en high-end woningpresentatie in Amsterdam en omgeving.</p>
+                    <p>Ik ben als gecertificeerd EP-adviseur jouw vaste aanspreekpunt voor alles wat te maken heeft met woonwaardering, zoals energielabels, puntentellingen, metingen en adviesrapporten. Voor de fotografie en woningpresentatie werk ik samen met een team van ervaren professionals.</p>
+                    <p>Samen zorgen we ervoor dat je verzekerd bent van betrouwbare energielabels, nauwkeurige metingen en hoogwaardige woningfotografie en presentatie, waaronder brochures, video's en 360°-beelden.</p>
+                    <p>Met Label & Lens heb je geen verschillende partijen nodig. Alles wordt persoonlijk en zorgvuldig geregeld via één aanspreekpunt. Eén bedrijf, één aanspreekpunt, één oplossing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WAAROM LABEL & LENS -->
+        <section class="py-16 md:py-24 container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Waarom Label & Lens?</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Geen massaproces, maar persoonlijk, duidelijk en goed geregeld</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- USP 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Persoonlijk contact</h3>
+                    <p class="text-gray-600">Direct contact met mij als adviseur en uitvoerder, van opname tot oplevering.</p>
+                </div>
+                <!-- USP 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Snel</h3>
+                    <p class="text-gray-600">Vaak binnen 48 uur geregeld en altijd binnen 5 werkdagen.</p>
+                </div>
+                <!-- USP 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Eén partner</h3>
+                    <p class="text-gray-600">Alles onder één dak. Eén aanspreekpunt voor het hele traject.</p>
+                </div>
+                <!-- USP 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Uitgebreide opname</h3>
+                    <p class="text-gray-600">Ik kijk verder dan alleen de basis en doe waar nodig extra onderzoek.</p>
+                </div>
+                <!-- USP 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Advies op maat</h3>
+                    <p class="text-gray-600">Gericht advies op basis van jouw situatie, wensen en budget.</p>
+                </div>
+                <!-- USP 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Flexibel</h3>
+                    <p class="text-gray-600">Ook op korte termijn of buiten werktijden mogelijk.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Wat klanten zeggen</h2>
+                <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Tevreden klanten in Amsterdam en omgeving</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <div class="flex text-yellow-500 mb-3">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="font-semibold mb-1">Emma van der Berg</p>
+                        <p class="text-sm text-gray-500 mb-3">2 weken geleden</p>
+                        <p class="text-gray-700">"Zeer professionele service! De adviseur was op tijd, vriendelijk en heeft alles goed uitgelegd. Het energielabel was binnen 3 dagen geleverd."</p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <div class="flex text-yellow-500 mb-3">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="font-semibold mb-1">Thomas de Vries</p>
+                        <p class="text-sm text-gray-500 mb-3">1 maand geleden</p>
+                        <p class="text-gray-700">"Perfect geregeld. Voor de verkoop van mijn appartement had ik snel een energielabel nodig. Label & Lens heeft dit keurig en snel afgehandeld. Aanrader!"</p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <div class="flex text-yellow-500 mb-3">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="font-semibold mb-1">Sophie Janssen</p>
+                        <p class="text-sm text-gray-500 mb-3">3 weken geleden</p>
+                        <p class="text-gray-700">"Ik heb zowel het energielabel als fotografie laten doen voor mijn woning. Beide services waren uitstekend. De foto's maakten mijn woning echt aantrekkelijk!"</p>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <div class="flex text-yellow-500 mb-3">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="font-semibold mb-1">Mark Hendriks</p>
+                        <p class="text-sm text-gray-500 mb-3">1 week geleden</p>
+                        <p class="text-gray-700">"Goede prijs-kwaliteit verhouding en deskundig advies over mogelijke verbeteringen aan mijn woning."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="py-16 md:py-24 container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Neem contact op</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 4v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l-2 2"></path></svg>
+                        <div>
+                            <p class="font-semibold">Email:</p>
+                            <a href="mailto:Info@labelenlens.nl" class="text-gray-700 hover:text-primary-green transition-colors">Info@labelenlens.nl</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <div>
+                            <p class="font-semibold">Telefoon:</p>
+                            <a href="tel:+31643735719" class="text-gray-700 hover:text-primary-green transition-colors">+31 6 43 73 57 19</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                        <div>
+                            <p class="font-semibold">WhatsApp:</p>
+                            <a href="https://wa.me/31643735719" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary-green transition-colors">Stuur een bericht</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <div>
+                            <p class="font-semibold">Locatie:</p>
+                            <p class="text-gray-700">Amsterdam, Nederland</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <div>
+                            <p class="font-semibold">Openingstijden:</p>
+                            <p class="text-gray-700">Ma-Vr 08:00-18:00</p>
+                            <p class="text-gray-700">Weekend op afspraak</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form (Placeholder for future implementation) -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-2xl font-semibold mb-6">Stuur ons een bericht</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Naam</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary-green focus:border-primary-green">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary-green focus:border-primary-green">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Bericht</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary-green focus:border-primary-green"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors shadow-md">Verstuur bericht</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM — PAULO -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Ontmoet de oprichter</h2>
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/3 mb-8 md:mb-0 flex-shrink-0">
+                        <img src="/images/paulo-portrait.webp" alt="Paulo, Oprichter en EP-adviseur van Label & Lens" width="1024" height="1536" loading="lazy" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-2/3 text-lg leading-relaxed">
+                        <h3 class="text-2xl font-bold mb-2">Paulo</h3>
+                        <p class="text-primary-green font-semibold mb-4">Oprichter en EP-adviseur</p>
+                        <div class="space-y-4 text-gray-700">
+                            <p>Als oprichter van Label & Lens bewaak ik de visie, kwaliteit en groei van het bedrijf. Met mijn achtergrond als gecertificeerd EP-adviseur en passie voor vastgoed combineer ik technische kennis over energieprestaties met inzicht in de vastgoedmarkt en een persoonlijke aanpak.</p>
+                            <p>In een markt waar snelheid en kwaliteit essentieel zijn, streef ik ernaar om beide te leveren, zorgvuldig, betrouwbaar en binnen enkele werkdagen. Mijn doel is helder: één bedrijf dat alles biedt, van woonwaardering tot presentatie. Eén bedrijf, één aanspreekpunt, één oplossing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16 md:py-24 container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Veelgestelde Vragen</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Niet het juiste antwoord gevonden? <a href="#contact" class="text-primary-green hover:underline">Neem contact op</a></p>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Wat is een energielabel?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Een energielabel geeft aan hoe energiezuinig een woning is. Het label loopt van A++++ (zeer zuinig) tot G (onzuinig). Sinds 2015 is een geldig energielabel verplicht bij verkoop of verhuur van een woning.</p>
+                </details>
+                <!-- FAQ Item 2 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Hoe lang is een energielabel geldig?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Een energielabel is 10 jaar geldig vanaf de datum van registratie.</p>
+                </details>
+                <!-- FAQ Item 3 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Wat is een NEN 2580 meting?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Een NEN 2580 meting is een officiële opmeting van het gebruiksoppervlak van een woning of gebouw volgens de NEN 2580 norm.</p>
+                </details>
+                <!-- FAQ Item 4 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Wat is een WWS puntentelling?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Het Woningwaarderingsstelsel (WWS) bepaalt de maximale huurprijs van een sociale huurwoning op basis van een puntensysteem.</p>
+                </details>
+                <!-- FAQ Item 5 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Hoe lang duurt het voordat ik mijn energielabel ontvang?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Meestal ontvangt u uw energielabel binnen 5 werkdagen na de opname. In veel gevallen is het al binnen 48 uur geregeld.</p>
+                </details>
+                <!-- FAQ Item 6 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Moet ik zelf aanwezig zijn bij de opname?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Het is niet verplicht om aanwezig te zijn, maar het is wel aan te raden. Zo kunt u direct vragen stellen.</p>
+                </details>
+                <!-- FAQ Item 7 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Wat zijn de kosten voor een energielabel?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">De kosten variëren afhankelijk van het type woning en de gewenste diensten. Neem contact op voor een vrijblijvende offerte.</p>
+                </details>
+                <!-- FAQ Item 8 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Kan ik het energielabel gebruiken voor subsidieaanvragen?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Ja, een energielabel is vaak een vereiste voor het aanvragen van subsidies voor verduurzaming.</p>
+                </details>
+                <!-- FAQ Item 9 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Wat gebeurt er tijdens de opname?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Tijdens de opname worden alle relevante kenmerken van de woning geïnspecteerd, zoals isolatie, verwarmingssysteem, ramen en ventilatie.</p>
+                </details>
+                <!-- FAQ Item 10 -->
+                <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                        Kan ik mijn energielabel verbeteren?
+                        <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="mt-4 text-gray-700">Ja, door energiebesparende maatregelen te nemen kunt u uw energielabel verbeteren. Wij bieden adviesrapporten aan met concrete aanbevelingen.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Certificeringen</h2>
+                <p class="text-lg text-gray-700 mb-8">Volledig gecertificeerd volgens de BRL9500 norm.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200 flex flex-col items-center">
+                        <svg class="w-12 h-12 text-primary-green mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c0 2.897.897 5.618 2.588 7.057 1.691 1.439 3.996 2.243 6.468 2.243s4.777-.804 6.468-2.243c1.691-1.439 2.588-4.16 2.588-7.057a12.007 12.007 0 00-.382-3.016z"></path></svg>
+                        <h3 class="text-xl font-semibold">BRL9500 gecertificeerd</h3>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200 flex flex-col items-center">
+                        <svg class="w-12 h-12 text-primary-green mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <h3 class="text-xl font-semibold">EPA-W software licentie</h3>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200 flex flex-col items-center">
+                        <svg class="w-12 h-12 text-primary-green mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c0 2.897.897 5.618 2.588 7.057 1.691 1.439 3.996 2.243 6.468 2.243s4.777-.804 6.468-2.243c1.691-1.439 2.588-4.16 2.588-7.057a12.007 12.007 0 00-.382-3.016z"></path></svg>
+                        <h3 class="text-xl font-semibold">Beroepsaansprakelijkheid</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING CTA -->
+        <section id="prijzen" class="py-16 md:py-24 container mx-auto px-4 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-4">Jouw pakket prijs berekenen</h3>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Stel eenvoudig jouw pakket samen en bereken binnen één minuut jouw persoonlijke prijs.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="/energielabel" class="bg-primary-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-md">Energielabel</a>
+                <a href="/energielabel" class="border-2 border-primary-green text-primary-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-green hover:text-white transition-colors shadow-md">Fotografie</a>
+                <a href="/energielabel" class="bg-primary-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-md">Label & Fotografie</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1a1a1a] text-gray-300 py-16 md:py-20">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Column 1: Logo + Company Info -->
+            <div>
+                <a href="/" class="flex items-center space-x-2 mb-4">
+                    <img src="/images/logo-image.webp" alt="Label & Lens Logo" width="40" height="40" class="w-10 h-10">
+                    <span class="text-xl font-bold text-white">Label & Lens</span>
+                </a>
+                <p class="text-sm leading-relaxed">Professionele energielabels en vastgoedfotografie in Amsterdam en omgeving.</p>
+            </div>
+
+            <!-- Column 2: Navigatie -->
+            <div>
+                <h3 class="font-semibold text-white mb-4">Navigatie</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/energielabel" class="hover:text-primary-green transition-colors">Energielabel</a></li>
+                    <li><a href="#diensten" class="hover:text-primary-green transition-colors">Onze diensten</a></li>
+                    <li><a href="/fotografie" class="hover:text-primary-green transition-colors">Fotografie</a></li>
+                    <li><a href="#prijzen" class="hover:text-primary-green transition-colors">Prijzen</a></li>
+                    <li><a href="#contact" class="hover:text-primary-green transition-colors">Contact</a></li>
+                    <li><a href="#faq" class="hover:text-primary-green transition-colors">FAQ</a></li>
+                    <li><a href="#over-ons" class="hover:text-primary-green transition-colors">Over ons</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Onze diensten -->
+            <div>
+                <h3 class="font-semibold text-white mb-4">Onze diensten</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/energielabels" class="hover:text-primary-green transition-colors">Energielabels</a></li>
+                    <li><a href="/wws-puntentelling/" class="hover:text-primary-green transition-colors">WWS Puntentelling</a></li>
+                    <li><a href="/nen-2580-metingen/" class="hover:text-primary-green transition-colors">NEN 2580 Metingen</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact -->
+            <div>
+                <h3 class="font-semibold text-white mb-4">Contact</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="mailto:Info@labelenlens.nl" class="hover:text-primary-green transition-colors">Info@labelenlens.nl</a></li>
+                    <li><a href="tel:+31643735719" class="hover:text-primary-green transition-colors">+31 6 43 73 57 19</a></li>
+                    <li><a href="https://wa.me/31643735719" target="_blank" rel="noopener noreferrer" class="hover:text-primary-green transition-colors">WhatsApp</a></li>
+                    <li>Amsterdam</li>
+                    <li>KVK: 87532638</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center text-sm text-gray-500">
+            <p>&copy; 2026 Label & Lens. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- Vanilla JS for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = mobileMenu.querySelectorAll('a');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('open');
+                // Optional: Change hamburger icon to close icon
+                const icon = mobileMenuButton.querySelector('svg path');
+                if (mobileMenu.classList.contains('open')) {
+                    icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                } else {
+                    icon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
+                }
+            });
+
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    const icon = mobileMenuButton.querySelector('svg path');
+                    icon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7');
+                });
+            });
+
+            // Optional: Add shadow to nav on scroll
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 0) {
+                    header.classList.add('shadow-lg');
+                } else {
+                    header.classList.remove('shadow-lg');
+                }
+            });
+
+            // Optional: Rotate arrow on FAQ details open/close
+            document.querySelectorAll('details').forEach((detail) => {
+                detail.addEventListener('toggle', () => {
+                    const arrow = detail.querySelector('.details-arrow');
+                    if (detail.open) {
+                        arrow.classList.add('rotate-180');
+                    } else {
+                        arrow.classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

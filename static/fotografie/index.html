@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vastgoedfotografie Amsterdam – Woningfoto's | Label & Lens</title>
+    <meta name="description" content="Professionele vastgoedfotografie in Amsterdam inclusief 360° virtuele tours en video. Snel geleverd, scherpe tarieven.">
+    <link rel="canonical" href="https://www.labelenlens.nl/fotografie">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.labelenlens.nl/fotografie">
+    <meta property="og:title" content="Vastgoedfotografie Amsterdam – Woningfoto's | Label & Lens">
+    <meta property="og:description" content="Professionele vastgoedfotografie in Amsterdam inclusief 360° virtuele tours en video. Snel geleverd, scherpe tarieven.">
+    <meta property="og:image" content="https://www.labelenlens.nl/images/hero-image.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.labelenlens.nl/fotografie">
+    <meta property="twitter:title" content="Vastgoedfotografie Amsterdam – Woningfoto's | Label & Lens">
+    <meta property="twitter:description" content="Professionele vastgoedfotografie in Amsterdam inclusief 360° virtuele tours en video. Snel geleverd, scherpe tarieven.">
+    <meta property="twitter:image" content="https://www.labelenlens.nl/images/hero-image.webp">
+
+    <!-- Hreflang -->
+    <link rel="alternate" href="https://www.labelenlens.nl/fotografie" hreflang="nl-NL">
+    <link rel="alternate" href="https://www.labelenlens.nl/fotografie" hreflang="x-default">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"></noscript>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" type="image/webp" href="/images/hero-image.webp" fetchpriority="high">
+
+    <!-- Inline Critical CSS -->
+    <style>
+        :root {
+            --primary-green: hsl(84, 75%, 55%);
+            --warm-bg: #faf9f7;
+            --text-color: #1a1a1a;
+            --card-bg: #fff;
+            --border-radius: 8px;
+        }
+        body {
+            font-family: Inter, system-ui, sans-serif;
+            margin: 0;
+            background: var(--warm-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: var(--card-bg);
+            box-shadow: 0 1px 3px rgba(0,0,0,.1);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        nav .nav-links {
+            display: none; /* Hidden by default for mobile */
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: var(--card-bg);
+            box-shadow: 0 2px 5px rgba(0,0,0,.1);
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav .nav-links.active {
+            display: flex;
+        }
+        nav .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        nav .nav-links a:hover {
+            background-color: #f0f0f0;
+        }
+        nav .nav-links .cta-button {
+            background-color: var(--primary-green);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            margin: 1rem auto;
+            display: inline-block;
+        }
+        nav .hamburger {
+            display: block; /* Visible by default for mobile */
+            cursor: pointer;
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: var(--text-color);
+        }
+        .hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .hero::before {
+            content:'';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,.55);
+        }
+        .hero * {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            padding: 0 1rem;
+        }
+
+        /* General layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        section {
+            padding: 3rem 0;
+        }
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+        h3 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 10px rgba(0,0,0,.05);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .button {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: hsl(84, 75%, 45%);
+        }
+
+        /* Pricing cards */
+        .pricing-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr; /* Single column for mobile */
+        }
+        .pricing-card {
+            text-align: center;
+            position: relative;
+        }
+        .pricing-card.popular {
+            border: 2px solid var(--primary-green);
+        }
+        .pricing-card .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: var(--primary-green);
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            border-radius: var(--border-radius);
+            font-size: 0.8rem;
+            font-weight: 600;
+            transform: rotate(5deg);
+        }
+        .pricing-card h3 {
+            margin-top: 0;
+            color: var(--primary-green);
+        }
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .pricing-card ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .pricing-card ul li::before {
+            content: '✓';
+            color: var(--primary-green);
+            position: absolute;
+            left: 0;
+        }
+
+        /* Portfolio grid */
+        .portfolio-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .portfolio-grid img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover;
+            border-radius: var(--border-radius);
+        }
+
+        /* Services grid */
+        .services-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr; /* Single column for mobile */
+        }
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .service-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+        }
+        .service-item h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact section */
+        .contact-cta {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 3rem 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 10px rgba(0,0,0,.05);
+        }
+        .contact-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 3rem 1rem;
+            font-size: 0.9rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column for mobile */
+            gap: 2rem;
+        }
+        footer h3 {
+            color: var(--primary-green);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            color: #fff;
+        }
+        footer .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+        footer .contact-info a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        footer .contact-info a:hover {
+            color: #fff;
+        }
+        footer .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #555;
+        }
+
+        /* Desktop styles */
+        @media (min-width: 768px) {
+            nav .nav-links {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                width: auto;
+                box-shadow: none;
+                padding: 0;
+            }
+            nav .nav-links a {
+                padding: 0.5rem 1rem;
+            }
+            nav .nav-links .cta-button {
+                margin: 0 0 0 1rem;
+            }
+            nav .hamburger {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .pricing-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .service-item {
+                flex-direction: row;
+                text-align: left;
+            }
+            .service-item img {
+                margin-right: 1.5rem;
+                margin-bottom: 0;
+                max-width: 200px;
+            }
+            .footer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .hero h1 {
+                font-size: 4.5rem;
+            }
+            .services-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .service-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .service-item img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Vastgoedfotografie Amsterdam – Woningfoto's",
+      "description": "Professionele vastgoedfotografie in Amsterdam inclusief 360° virtuele tours en video. Snel geleverd, scherpe tarieven.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Label & Lens",
+        "url": "https://www.labelenlens.nl"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Amsterdam"
+      },
+      "url": "https://www.labelenlens.nl/fotografie"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">Label & Lens</a>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <div class="nav-links">
+                <a href="/energielabel">Energielabel</a>
+                <a href="/fotografie">Fotografie</a>
+                <a href="/energielabel#prijzen">Prijzen</a>
+                <a href="#contact">Contact</a>
+                <a href="#" class="cta-button">Aanvragen</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('/images/hero-image.webp');">
+            <div class="container">
+                <h1>Vastgoedfotografie Amsterdam</h1>
+            </div>
+        </section>
+
+        <section id="intro" class="container">
+            <h2>Professionele woningfotografie voor een perfecte eerste indruk</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                Of het nu gaat om verkoop, verhuur of vastgoedbeheer, met Label & Lens presenteert u elk pand op zijn best. Wij zorgen voor haarscherpe beelden die de unieke sfeer en potentie van uw woning vangen, en potentiële kopers of huurders direct aanspreken.
+            </p>
+        </section>
+
+        <section id="pakketten" class="container">
+            <h2>Onze Fotografie Pakketten</h2>
+            <div class="pricing-grid">
+                <article class="card pricing-card">
+                    <h3>Basic</h3>
+                    <p class="price">€149</p>
+                    <ul>
+                        <li>Tot 10 foto's</li>
+                        <li>Basisbewerkingen</li>
+                        <li>Levering binnen 2 dagen</li>
+                    </ul>
+                    <a href="#" class="button">Kies Basic</a>
+                </article>
+
+                <article class="card pricing-card popular">
+                    <span class="popular-badge">POPULAR</span>
+                    <h3>Standaard</h3>
+                    <p class="price">€249</p>
+                    <ul>
+                        <li>Tot 20 foto's</li>
+                        <li>Geavanceerde bewerking</li>
+                        <li>Drone-opnamen (indien mogelijk)</li>
+                        <li>Plattegrond</li>
+                        <li>Levering binnen 24 uur</li>
+                    </ul>
+                    <a href="#" class="button">Kies Standaard</a>
+                </article>
+
+                <article class="card pricing-card">
+                    <h3>Premium</h3>
+                    <p class="price">€399</p>
+                    <ul>
+                        <li>Onbeperkt foto's</li>
+                        <li>360° virtuele tour</li>
+                        <li>Video walkthrough</li>
+                        <li>Drone-opnamen (indien mogelijk)</li>
+                        <li>Styling advies</li>
+                        <li>Levering binnen 24 uur</li>
+                    </ul>
+                    <a href="#" class="button">Kies Premium</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Ons Portfolio</h2>
+            <div class="portfolio-grid">
+                <img src="/images/photo01.webp" alt="Moderne woonkamer met veel lichtinval" width="800" height="533" loading="lazy">
+                <img src="/images/photo02.webp" alt="Slaapkamer met uitzicht op de stad" width="800" height="533" loading="lazy">
+                <img src="/images/photo03.webp" alt="Ruime keuken met kookeiland" width="800" height="533" loading="lazy">
+                <img src="/images/photo04.webp" alt="Badkamer met inloopdouche en dubbele wastafel" width="800" height="533" loading="lazy">
+                <img src="/images/photo05.webp" alt="Exterieur van een woning met tuin" width="800" height="533" loading="lazy">
+                <img src="/images/photo06.webp" alt="Lichte eetkamer met moderne inrichting" width="800" height="533" loading="lazy">
+            </div>
+        </section>
+
+        <section id="diensten" class="container">
+            <h2>Aanvullende Diensten</h2>
+            <div class="services-grid">
+                <div class="card service-item">
+                    <img src="/images/camera-image.webp" alt="Camera icon representing woningfotografie" width="200" height="200" loading="lazy">
+                    <div>
+                        <h3>Woningfotografie</h3>
+                        <p>Professionele foto's die de sterke punten van uw woning benadrukken.</p>
+                    </div>
+                </div>
+                <div class="card service-item">
+                    <img src="/images/floorplan-image.webp" alt="Floorplan icon representing plattegronden" width="200" height="200" loading="lazy">
+                    <div>
+                        <h3>Plattegronden</h3>
+                        <p>Duidelijke en accurate plattegronden voor een compleet beeld van de indeling.</p>
+                    </div>
+                </div>
+                <div class="card service-item">
+                    <img src="/images/tablet-image.webp" alt="Tablet showing a 360 degree tour" width="200" height="200" loading="lazy">
+                    <div>
+                        <h3>360° Virtuele Tour</h3>
+                        <p>Laat potentiële kopers de woning virtueel ervaren vanuit elke hoek.</p>
+                    </div>
+                </div>
+                <div class="card service-item">
+                    <img src="/images/video-image.webp" alt="Video camera icon representing video tours" width="200" height="200" loading="lazy">
+                    <div>
+                        <h3>Video Tours</h3>
+                        <p>Dynamische video's die de flow en sfeer van de woning perfect weergeven.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Klaar om uw woning te laten stralen?</h2>
+            <div class="contact-cta">
+                <p>Neem contact met ons op voor een vrijblijvende offerte of meer informatie over onze diensten.</p>
+                <a href="mailto:info@labelenlens.nl" class="button">Neem Contact Op</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3>Label & Lens</h3>
+                <p>Uw partner voor vastgoedpresentatie.</p>
+            </div>
+            <div>
+                <h3>Diensten</h3>
+                <ul>
+                    <li><a href="/energielabel">Energielabel</a></li>
+                    <li><a href="/fotografie">Vastgoedfotografie</a></li>
+                    <li><a href="/energielabel#prijzen">Prijzen</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <p>E-mail: <a href="mailto:Info@labelenlens.nl">Info@labelenlens.nl</a></p>
+                    <p>Telefoon: <a href="tel:+31643735719">+31 6 43 73 57 19</a></p>
+                    <p>KVK: 87532638</p>
+                </div>
+            </div>
+            <div>
+                <h3>Locatie</h3>
+                <p>Amsterdam, Nederland</p>
+            </div>
+        </div>
+        <div class="copyright container">
+            <p>&copy; 2026 Label & Lens. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when a link is clicked (for mobile)
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
