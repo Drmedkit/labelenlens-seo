@@ -68,11 +68,11 @@
             background-color: hsl(40, 15%, 98%); /* Warm off-white */
             color: hsl(0, 0%, 10%); /* Near-black */
         }
-        .text-primary-green { color: hsl(84, 75%, 55%); }
-        .bg-primary-green { background-color: hsl(84, 75%, 55%); }
-        .border-primary-green { border-color: hsl(84, 75%, 55%); }
-        .hover\:bg-primary-green:hover { background-color: hsl(84, 75%, 55%); }
-        .hover\:text-primary-green:hover { color: hsl(84, 75%, 55%); }
+        .text-primary { color: hsl(84, 75%, 55%); }
+        .bg-primary { background-color: hsl(84, 75%, 55%); }
+        .border-primary { border-color: hsl(84, 75%, 55%); }
+        .hover\:bg-primary:hover { background-color: hsl(84, 75%, 55%); }
+        .hover\:text-primary:hover { color: hsl(84, 75%, 55%); }
         .focus\:ring-primary-green:focus { --tw-ring-color: hsl(84, 75%, 55%); }
 
         /* Custom styles for mobile menu transition */
@@ -107,17 +107,17 @@
 
             <!-- Desktop Navigation -->
             <ul class="hidden md:flex space-x-8 font-medium">
-                <li><a href="/energielabel" class="hover:text-primary-green transition-colors">Energielabel</a></li>
-                <li><a href="/fotografie" class="hover:text-primary-green transition-colors">Fotografie</a></li>
-                <li><a href="#prijzen" class="hover:text-primary-green transition-colors">Prijzen</a></li>
-                <li><a href="#contact" class="hover:text-primary-green transition-colors">Contact</a></li>
+                <li><a href="/energielabel" class="hover:text-primary transition-colors">Energielabel</a></li>
+                <li><a href="/fotografie" class="hover:text-primary transition-colors">Fotografie</a></li>
+                <li><a href="#prijzen" class="hover:text-primary transition-colors">Prijzen</a></li>
+                <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
             </ul>
 
             <!-- CTA Button (Desktop) -->
-            <a href="#contact" class="hidden md:block bg-primary-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors shadow-md">Aanvragen</a>
+            <a href="#contact" class="hidden md:block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors shadow-md">Aanvragen</a>
 
             <!-- Mobile Menu Button -->
-            <button data-menu-toggle aria-label="Menu openen" aria-expanded="false" id="menu-toggle" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-green" aria-label="Menu">
+            <button data-menu-toggle aria-label="Menu openen" aria-expanded="false" id="menu-toggle" class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" aria-label="Menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -127,11 +127,11 @@
         <!-- Mobile Menu (Slide-down) -->
         <div data-menu id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-md">
             <ul class="flex flex-col px-4 py-2 space-y-2 font-medium">
-                <li><a href="/energielabel" class="block py-2 hover:text-primary-green transition-colors">Energielabel</a></li>
-                <li><a href="/fotografie" class="block py-2 hover:text-primary-green transition-colors">Fotografie</a></li>
-                <li><a href="#prijzen" class="block py-2 hover:text-primary-green transition-colors">Prijzen</a></li>
-                <li><a href="#contact" class="block py-2 hover:text-primary-green transition-colors">Contact</a></li>
-                <li><a href="#contact" class="block bg-primary-green text-white px-4 py-2 rounded-lg font-semibold text-center hover:bg-green-600 transition-colors mt-2">Aanvragen</a></li>
+                <li><a href="/energielabel" class="block py-2 hover:text-primary transition-colors">Energielabel</a></li>
+                <li><a href="/fotografie" class="block py-2 hover:text-primary transition-colors">Fotografie</a></li>
+                <li><a href="#prijzen" class="block py-2 hover:text-primary transition-colors">Prijzen</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="#contact" class="block bg-primary text-white px-4 py-2 rounded-lg font-semibold text-center hover:bg-green-600 transition-colors mt-2">Aanvragen</a></li>
             </ul>
         </div>
     </header>
@@ -144,8 +144,8 @@
                 <h1 class="text-2xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-4">Energielabel & Woningpresentatie</h1>
                 <p class="text-base sm:text-lg md:text-xl mb-8">Volledige woonwaardering én high-end presentatie. Eén partner, één oplossing</p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#contact" class="bg-primary-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-lg">Energielabel aanvragen</a>
-                    <a href="#diensten" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-green transition-colors shadow-lg">Bekijk diensten</a>
+                    <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-lg">Energielabel aanvragen</a>
+                    <a href="#diensten" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-colors shadow-lg">Bekijk diensten</a>
                 </div>
             </div>
         </section>
@@ -156,7 +156,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Card 1: Energielabel -->
                 <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center flex flex-col items-center">
-                    <div class="text-primary-green mb-4">
+                    <div class="text-primary mb-4">
                         <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Energielabel</h3>
@@ -164,7 +164,7 @@
                 </div>
                 <!-- Card 2: Fotografie -->
                 <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center flex flex-col items-center">
-                    <div class="text-primary-green mb-4">
+                    <div class="text-primary mb-4">
                         <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Fotografie</h3>
@@ -172,7 +172,7 @@
                 </div>
                 <!-- Card 3: Energielabel & Woningpresentatie -->
                 <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center flex flex-col items-center">
-                    <div class="text-primary-green mb-4">
+                    <div class="text-primary mb-4">
                         <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Energielabel & Woningpresentatie</h3>
@@ -228,19 +228,19 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
                 <!-- Step 1 -->
                 <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                    <div class="w-16 h-16 flex items-center justify-center bg-primary-green text-white rounded-full text-2xl font-bold mb-4">1</div>
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full text-2xl font-bold mb-4">1</div>
                     <h3 class="text-xl font-semibold mb-2">Afspraak inplannen</h3>
                     <p class="text-gray-600">U plant met ons een afspraak in</p>
                 </div>
                 <!-- Step 2 -->
                 <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                    <div class="w-16 h-16 flex items-center justify-center bg-primary-green text-white rounded-full text-2xl font-bold mb-4">2</div>
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full text-2xl font-bold mb-4">2</div>
                     <h3 class="text-xl font-semibold mb-2">Opname ter plaatse</h3>
                     <p class="text-gray-600">Wij komen langs voor de opname</p>
                 </div>
                 <!-- Step 3 -->
                 <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                    <div class="w-16 h-16 flex items-center justify-center bg-primary-green text-white rounded-full text-2xl font-bold mb-4">3</div>
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary text-white rounded-full text-2xl font-bold mb-4">3</div>
                     <h3 class="text-xl font-semibold mb-2">Documenten ontvangen</h3>
                     <p class="text-gray-600">U ontvangt uw documenten</p>
                 </div>
@@ -367,35 +367,35 @@
                 <!-- Contact Info -->
                 <div class="space-y-6">
                     <div class="flex items-center space-x-4">
-                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 4v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l-2 2"></path></svg>
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 4v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l-2 2"></path></svg>
                         <div>
                             <p class="font-semibold">Email:</p>
-                            <a href="mailto:Info@labelenlens.nl" class="text-gray-700 hover:text-primary-green transition-colors">Info@labelenlens.nl</a>
+                            <a href="mailto:Info@labelenlens.nl" class="text-gray-700 hover:text-primary transition-colors">Info@labelenlens.nl</a>
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         <div>
                             <p class="font-semibold">Telefoon:</p>
-                            <a href="tel:+31643735719" class="text-gray-700 hover:text-primary-green transition-colors">+31 6 43 73 57 19</a>
+                            <a href="tel:+31643735719" class="text-gray-700 hover:text-primary transition-colors">+31 6 43 73 57 19</a>
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
                         <div>
                             <p class="font-semibold">WhatsApp:</p>
-                            <a href="https://wa.me/31643735719" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary-green transition-colors">Stuur een bericht</a>
+                            <a href="https://wa.me/31643735719" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary transition-colors">Stuur een bericht</a>
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         <div>
                             <p class="font-semibold">Locatie:</p>
                             <p class="text-gray-700">Amsterdam, Nederland</p>
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <svg class="w-8 h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                         <div>
                             <p class="font-semibold">Openingstijden:</p>
                             <p class="text-gray-700">Ma-Vr 08:00-18:00</p>
@@ -409,17 +409,17 @@
                     <form class="space-y-4" data-contact-form>
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700">Naam</label>
-                            <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary-green focus:border-primary-green">
+                            <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary focus:border-primary">
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                            <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary-green focus:border-primary-green">
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary focus:border-primary">
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-700">Bericht</label>
-                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary-green focus:border-primary-green"></textarea>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-primary focus:border-primary"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-primary-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors shadow-md">Verstuur bericht</button>
+                        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors shadow-md">Verstuur bericht</button>
                     </form>
                 </div>
             </div>
@@ -435,7 +435,7 @@
                     </div>
                     <div class="md:w-2/3 text-lg leading-relaxed">
                         <h3 class="text-2xl font-bold mb-2">Paulo</h3>
-                        <p class="text-primary-green font-semibold mb-4">Oprichter en EP-adviseur</p>
+                        <p class="text-primary font-semibold mb-4">Oprichter en EP-adviseur</p>
                         <div class="space-y-4 text-gray-700">
                             <p>Als oprichter van Label & Lens bewaak ik de visie, kwaliteit en groei van het bedrijf. Met mijn achtergrond als gecertificeerd EP-adviseur en passie voor vastgoed combineer ik technische kennis over energieprestaties met inzicht in de vastgoedmarkt en een persoonlijke aanpak.</p>
                             <p>In een markt waar snelheid en kwaliteit essentieel zijn, streef ik ernaar om beide te leveren, zorgvuldig, betrouwbaar en binnen enkele werkdagen. Mijn doel is helder: één bedrijf dat alles biedt, van woonwaardering tot presentatie. Eén bedrijf, één aanspreekpunt, één oplossing.</p>
@@ -448,11 +448,11 @@
         <!-- FAQ -->
         <section class="py-16 md:py-24 container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Veelgestelde Vragen</h2>
-            <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Niet het juiste antwoord gevonden? <a href="#contact" class="text-primary-green hover:underline">Neem contact op</a></p>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Niet het juiste antwoord gevonden? <a href="#contact" class="text-primary hover:underline">Neem contact op</a></p>
             <div class="max-w-3xl mx-auto space-y-4">
                 <!-- FAQ Item 1 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Wat is een energielabel?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -460,7 +460,7 @@
                 </details>
                 <!-- FAQ Item 2 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Hoe lang is een energielabel geldig?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -468,7 +468,7 @@
                 </details>
                 <!-- FAQ Item 3 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Wat is een NEN 2580 meting?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -476,7 +476,7 @@
                 </details>
                 <!-- FAQ Item 4 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Wat is een WWS puntentelling?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -484,7 +484,7 @@
                 </details>
                 <!-- FAQ Item 5 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Hoe lang duurt het voordat ik mijn energielabel ontvang?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -492,7 +492,7 @@
                 </details>
                 <!-- FAQ Item 6 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Moet ik zelf aanwezig zijn bij de opname?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -500,7 +500,7 @@
                 </details>
                 <!-- FAQ Item 7 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Wat zijn de kosten voor een energielabel?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -508,7 +508,7 @@
                 </details>
                 <!-- FAQ Item 8 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Kan ik het energielabel gebruiken voor subsidieaanvragen?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -516,7 +516,7 @@
                 </details>
                 <!-- FAQ Item 9 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Wat gebeurt er tijdens de opname?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -524,7 +524,7 @@
                 </details>
                 <!-- FAQ Item 10 -->
                 <details class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary-green transition-colors">
+                    <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg text-[#1a1a1a] hover:text-primary transition-colors">
                         Kan ik mijn energielabel verbeteren?
                         <svg class="w-6 h-6 transform transition-transform duration-200 details-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
@@ -540,15 +540,15 @@
                 <p class="text-lg text-gray-700 mb-8">Volledig gecertificeerd volgens de BRL9500 norm.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
                     <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200 flex flex-col items-center">
-                        <svg class="w-12 h-12 text-primary-green mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c0 2.897.897 5.618 2.588 7.057 1.691 1.439 3.996 2.243 6.468 2.243s4.777-.804 6.468-2.243c1.691-1.439 2.588-4.16 2.588-7.057a12.007 12.007 0 00-.382-3.016z"></path></svg>
+                        <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c0 2.897.897 5.618 2.588 7.057 1.691 1.439 3.996 2.243 6.468 2.243s4.777-.804 6.468-2.243c1.691-1.439 2.588-4.16 2.588-7.057a12.007 12.007 0 00-.382-3.016z"></path></svg>
                         <h3 class="text-xl font-semibold">BRL9500 gecertificeerd</h3>
                     </div>
                     <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200 flex flex-col items-center">
-                        <svg class="w-12 h-12 text-primary-green mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                         <h3 class="text-xl font-semibold">EPA-W software licentie</h3>
                     </div>
                     <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200 flex flex-col items-center">
-                        <svg class="w-12 h-12 text-primary-green mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c0 2.897.897 5.618 2.588 7.057 1.691 1.439 3.996 2.243 6.468 2.243s4.777-.804 6.468-2.243c1.691-1.439 2.588-4.16 2.588-7.057a12.007 12.007 0 00-.382-3.016z"></path></svg>
+                        <svg class="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c0 2.897.897 5.618 2.588 7.057 1.691 1.439 3.996 2.243 6.468 2.243s4.777-.804 6.468-2.243c1.691-1.439 2.588-4.16 2.588-7.057a12.007 12.007 0 00-.382-3.016z"></path></svg>
                         <h3 class="text-xl font-semibold">Beroepsaansprakelijkheid</h3>
                     </div>
                 </div>
@@ -560,9 +560,9 @@
             <h3 class="text-3xl md:text-4xl font-bold mb-4">Jouw pakket prijs berekenen</h3>
             <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Stel eenvoudig jouw pakket samen en bereken binnen één minuut jouw persoonlijke prijs.</p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="/energielabel" class="bg-primary-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-md">Energielabel</a>
-                <a href="/energielabel" class="border-2 border-primary-green text-primary-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-green hover:text-white transition-colors shadow-md">Fotografie</a>
-                <a href="/energielabel" class="bg-primary-green text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-md">Label & Fotografie</a>
+                <a href="/energielabel" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-md">Energielabel</a>
+                <a href="/energielabel" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-colors shadow-md">Fotografie</a>
+                <a href="/energielabel" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors shadow-md">Label & Fotografie</a>
             </div>
         </section>
     </main>
@@ -583,13 +583,13 @@
             <div>
                 <h3 class="font-semibold text-white mb-4">Navigatie</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/energielabel" class="hover:text-primary-green transition-colors">Energielabel</a></li>
-                    <li><a href="#diensten" class="hover:text-primary-green transition-colors">Onze diensten</a></li>
-                    <li><a href="/fotografie" class="hover:text-primary-green transition-colors">Fotografie</a></li>
-                    <li><a href="#prijzen" class="hover:text-primary-green transition-colors">Prijzen</a></li>
-                    <li><a href="#contact" class="hover:text-primary-green transition-colors">Contact</a></li>
-                    <li><a href="#faq" class="hover:text-primary-green transition-colors">FAQ</a></li>
-                    <li><a href="#over-ons" class="hover:text-primary-green transition-colors">Over ons</a></li>
+                    <li><a href="/energielabel" class="hover:text-primary transition-colors">Energielabel</a></li>
+                    <li><a href="#diensten" class="hover:text-primary transition-colors">Onze diensten</a></li>
+                    <li><a href="/fotografie" class="hover:text-primary transition-colors">Fotografie</a></li>
+                    <li><a href="#prijzen" class="hover:text-primary transition-colors">Prijzen</a></li>
+                    <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+                    <li><a href="#faq" class="hover:text-primary transition-colors">FAQ</a></li>
+                    <li><a href="#over-ons" class="hover:text-primary transition-colors">Over ons</a></li>
                 </ul>
             </div>
 
@@ -597,9 +597,9 @@
             <div>
                 <h3 class="font-semibold text-white mb-4">Onze diensten</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/energielabels" class="hover:text-primary-green transition-colors">Energielabels</a></li>
-                    <li><a href="/wws-puntentelling/" class="hover:text-primary-green transition-colors">WWS Puntentelling</a></li>
-                    <li><a href="/nen-2580-metingen/" class="hover:text-primary-green transition-colors">NEN 2580 Metingen</a></li>
+                    <li><a href="/energielabels" class="hover:text-primary transition-colors">Energielabels</a></li>
+                    <li><a href="/wws-puntentelling/" class="hover:text-primary transition-colors">WWS Puntentelling</a></li>
+                    <li><a href="/nen-2580-metingen/" class="hover:text-primary transition-colors">NEN 2580 Metingen</a></li>
                 </ul>
             </div>
 
@@ -607,9 +607,9 @@
             <div>
                 <h3 class="font-semibold text-white mb-4">Contact</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="mailto:Info@labelenlens.nl" class="hover:text-primary-green transition-colors">Info@labelenlens.nl</a></li>
-                    <li><a href="tel:+31643735719" class="hover:text-primary-green transition-colors">+31 6 43 73 57 19</a></li>
-                    <li><a href="https://wa.me/31643735719" target="_blank" rel="noopener noreferrer" class="hover:text-primary-green transition-colors">WhatsApp</a></li>
+                    <li><a href="mailto:Info@labelenlens.nl" class="hover:text-primary transition-colors">Info@labelenlens.nl</a></li>
+                    <li><a href="tel:+31643735719" class="hover:text-primary transition-colors">+31 6 43 73 57 19</a></li>
+                    <li><a href="https://wa.me/31643735719" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">WhatsApp</a></li>
                     <li>Amsterdam</li>
                     <li>KVK: 87532638</li>
                 </ul>
