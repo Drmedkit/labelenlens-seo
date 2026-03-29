@@ -17,20 +17,15 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom", "wouter"],
-          ui: ["@radix-ui/react-accordion", "@radix-ui/react-dialog"],
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("react") || id.includes("wouter")) return "vendor";
+            if (id.includes("@radix-ui")) return "ui";
+          }
         },
       },
     },
-    // Enable minification and tree shaking
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
+    minify: "esbuild",
     // Optimize assets
     assetsInlineLimit: 4096,
     cssMinify: true,
