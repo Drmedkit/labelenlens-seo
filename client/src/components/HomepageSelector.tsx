@@ -11,7 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
-import type { PropertyType, PropertySize, FotografiePakket, QuoteRequest } from "@shared/schema";
+import type { PropertyType, PropertySize, FotografiePakket, QuoteRequest, QuoteRequestInput } from "@shared/schema";
 import { calculatorPricing, quoteRequestSchema } from "@shared/schema";
 
 type ServiceOption = "energielabel" | "fotografie" | "label-fotografie";
@@ -41,7 +41,7 @@ export function HomepageSelector() {
 
   const { toast } = useToast();
 
-  const form = useForm<QuoteRequest>({
+  const form = useForm<QuoteRequestInput, any, QuoteRequest>({
     resolver: zodResolver(quoteRequestSchema),
     defaultValues: {
       name: "",

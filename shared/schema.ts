@@ -65,6 +65,8 @@ export const contactFormSchema = z.object({
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;
+// Form input type (before defaults are applied) for react-hook-form with zod v4
+export type ContactFormInput = z.input<typeof contactFormSchema>;
 
 // Quote Request Schema (from calculator)
 export const quoteRequestSchema = z.object({
@@ -80,6 +82,8 @@ export const quoteRequestSchema = z.object({
 });
 
 export type QuoteRequest = z.infer<typeof quoteRequestSchema>;
+// Form input type (before defaults are applied) for react-hook-form with zod v4
+export type QuoteRequestInput = z.input<typeof quoteRequestSchema>;
 
 // Quote Form Schema (without calculatorState - for frontend form validation)
 export const quoteFormSchema = z.object({
