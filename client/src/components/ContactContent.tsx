@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contactFormSchema, type ContactFormData } from "@shared/schema";
+import { contactFormSchema, type ContactFormData, type ContactFormInput } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
 import {
   Form,
@@ -22,7 +22,7 @@ export function ContactContent() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
 
-  const form = useForm<ContactFormData>({
+  const form = useForm<ContactFormInput, any, ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",

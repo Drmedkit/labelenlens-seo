@@ -15,7 +15,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
-import type { QuoteRequest } from "@shared/schema";
+import type { QuoteRequest, QuoteRequestInput } from "@shared/schema";
 import { quoteRequestSchema, calculatorPricing } from "@shared/schema";
 import heroImage from "@assets/amsterdam-canal-boats_1760692744422.webp";
 import tabletImage from "@assets/generated_images/Tablet_with_360_virtual_tour_22a86885.webp";
@@ -206,7 +206,7 @@ export default function Fotografie() {
     },
   ];
 
-  const form = useForm<QuoteRequest>({
+  const form = useForm<QuoteRequestInput, any, QuoteRequest>({
     resolver: zodResolver(quoteRequestSchema),
     defaultValues: {
       name: "",

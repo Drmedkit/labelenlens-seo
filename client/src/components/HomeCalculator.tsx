@@ -33,6 +33,7 @@ import {
   type ServiceType,
   type FotografiePakket,
   type QuoteRequest,
+  type QuoteRequestInput,
   calculatorPricing,
   quoteRequestSchema,
 } from "@shared/schema";
@@ -75,7 +76,7 @@ export function HomeCalculator() {
   const [expandedService, setExpandedService] = useState<"energielabel" | "fotografie" | "label-fotografie" | "puntentelling" | "adviesrapport" | null>(null);
   const { toast } = useToast();
 
-  const form = useForm<QuoteRequest>({
+  const form = useForm<QuoteRequestInput, any, QuoteRequest>({
     resolver: zodResolver(quoteRequestSchema),
     defaultValues: {
       name: "",
